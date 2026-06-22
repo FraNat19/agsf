@@ -1,0 +1,505 @@
+{
+  "faqs": [
+    {
+      "titolo": "Products and Subscription Process",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "What are the available Lene offers and subscription options?\n\nCome varia la potenza (kW) del contatore passando a Lene?/Passando a Lene la potenza del contratto rimarrà invariata?\n\nQuanto tempo ci vuole per attivare un'offerta/fornitura?\n\nQuanto tempo ci vuole per attivare una voltura luce?\n\nQuanto costa effettuare una voltura?",
+      "answer": "##Offers and products subscription
+Product subscription is available via AI agent or website. Clients cannot subscribe an offer via app.
+### Offerte Placet
+The "Placet" offers are a type of contract for electricity and gas supplies in the "mercato libero", with standardized contractual conditions set by ARERA and with prices and economic conditions freely determined by suppliers. They are mandatory for all suppliers and are divided into fixed-price or variable-price offers. If interested, visit website for self-service option.
+### Offerta per Te
+- Available online only at https://www.lene.it/per-te-luce-gas
+- Is requested to client to upload competitor’s bill, and an AI system will analyze it and in some case propose a personal discount designed for the client
+- Provides accurate savings calculation
+- Recommended for maximizing savings
+- Cannot be configured by phone or with AI agent
+## Key Benefits of subscribing with Lene
+- Fixed price for 12 months for both electricity or gas price and commercial costs
+- No activation costs
+- No exit penalties
+- Simple app management
+- Digital billing via email
+- 100% certified renewable energy
+-  There are no penalties for switching supplier
+ 
+## Pricing and Tariff Information
+### Tariff Structure
+- **Monoraria offers**: Single price all day, every day - electricity cost doesn't change by time of day. Simple, transparent. One price, all day, every day. It's easier to manage, more transparent, and often the most convenient choice.
+- **Energy price component**: Refers to energy component only (VAT and taxes excluded), guaranteed for 12 months, includes grid losses as defined by ARERA. From april 2026 it also includes "Corrispettivo di sbilanciamento".
+- **Commercial costs**: Fixed fee covering supplier expenses for contract management, billing, customer service. In free market, determined by each supplier. From april 2026 it also includes "Componente di dispacciamento".
+### Bill Composition
+- Supplier costs (Lene): Energy or gas price (~40%) + commercial costs (~10%) = ~50% of bill
+- Regulated costs (same for all): Transport and meter management (~20%), system charges (~15%), state taxes - excise and IVA (~15%)
+- Note: Percentages are indicative and may vary based on consumption
+ 
+## Available services and Eligibility
+### Coverage (copertura) and Limitations
+- **Coverage (copertura)**: Lene provides supply across the entire Italian territory
+- **Dual offers**: Available, increases savings, valid only at same address
+- **Multiple addresses and supplies**:  It is possible to activate multiple supplies but they will be processed one at a time
+- **Different addresses for dual**: Not possible - alternatively activate electricity first, then gas
+- **Excluded properties and uses**: PODs intended for purposes other than residential or domestic use (e.g., garages, commercial activities, or other non-residential supplies) are not eligible for offer subscription/contracts activation
+### Services Currently Provided
+- **Switch attivo**: Process to change only supplier of gas or electricity supplies (it can be abbreviated as SWA). This process is available for both electricity and gas.
+- **Voltura standard (Electricity and Gas)**: Process dedicated to customers who want to change the owner of an electricity or gas supply. Lene provides this service for both electricity and gas. The cost is 20€ + IVA and it will be charged on the first bill.
+- **Voltura con cambio fornitore (Electricity and Gas)**: Process for customer who want to subscribe a new electricity or gas supply with Lene and change the supply's owner at the same time. Lene provides this service for both electricity and gas with no extra costs.
+### Services Not Currently Provided
+- **Prima Attivazione**: Process for installing new meter - Do not transfer to human operator, inform the client that Lene not providing this service currently
+- **Subentro**: Process for reactivating disconnected meter supply - Do not transfer to human operator, inform the client that Lene not providing this service currently.
+-**Services that require a technician’s visit to the home**: Lene does not provide any services related to meter management that require a technician’s intervention, such as installation, connection, or disconnection. It also does not provide any work on the electricity or gas network. Lene not providing this service currently.
+### Excise Duties
+Excise duties on electricity are calculated by applying a rate for each kilowatt-hour (kWh) consumed, with different tariffs for domestic and commercial use and various exemptions for residents with low consumption. The excise amount varies based on the quantity of energy consumed and is applied directly to the bill.
+ 
+## Activation and Service Continuity
+-**Documents needed to activate a supply**:  Activating a supply with Lene is super easy — it only takes 3 minutes!
+You’ll need:
+•	Personal details of the new account holder: first name, last name, tax code, and a copy of a valid ID.
+•	Supply details: property address and POD code for electricity.
+•	Then just choose your payment method, and your supply will be ready!
+-**Service continuity**: When switching to Lene, your electricity will remain active. Your energy supply will not be interrupted during the switch process.
+-**Activation power level**: When switching your electricity supply/contract to Lene, your meter’s power capacity remains unchanged at no additional cost. For example, if your current meter power is 1.5, 3, 4.5, or 6 kW, it will remain the same once the supply becomes active. If the customer wishes to change the power capacity after the contract is activated, they can submit a request via the app
+-**Activation tracking**: You can track the activation of the service through the Lene App
+- **Activation timing for “switch attivo” (or SWA)/how long it takes to activate an offer/what is the activation time/ How long before the supply is activated?**: The switch to Lene takes approximately one month, clients can monitor the activation of the contract/supply through the app
+- **Activation timing for voltura (electricity and gas)/how long it takes to complete a voltura standard/con cambio fornitore?**: The "voltura" with Lene requires 5 working days to be completed, both for electricity and gas supplies.
+-**Boiler-related services**: Lene does not sell or provide any services related to boilers or heating systems
+##How to subscribe a contract via web site
+Go to Lene’s website, in the top menu access the ‘Le nostre offerte” tab, select the most suitable product and proceed with entering the data. The customer is not asked what type of process they want to carry out; they are guided step by step by us, providing only the necessary information and avoiding technical terms.",
+      "nome": "Products-and-Subscription-Process",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Lene App Features and customer support guideline",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "How does the Lene app work, and where can I find help or support?\n\nCosa devo fare se il mio contatore è rotto/non funziona correttamente?\n\nCome controllare lo stato di attivazione della fornitura/contratto?\n\nCome aumentare o diminuire la potenza (kW) del contatore?\n\Come controllare i consumi?
+Come gestire utenze con intestatari diversi sull'app?
+Posso rateizzare la bolletta? Come pago la bolletta a rate?
+Come faccio l'autolettura del gas dall'app?
+Dove scarico il contratto o i documenti della fornitura?
+",
+      "answer": ## Download and Registration process
+### App Download
+The Lene app can be downloaded:
+•	From the AppStore (iPhone) at the following link: https://apps.apple.com/us/app/lene/id6748343504
+•	From the Play Store (Android) at the following link: https://play.google.com/store/apps/details?id=it.lene.lene
+### Registration Process
+- Registration on the app is available only for existing customers
+- You must have already subscribed to an offer before registering in the app
+- Open the app and tap "Register"
+- Create username and password
+- **Important**: Username must be an email address
+- **Recommendation**: Use the same email provided when signing up for the offer. If you do not posses an email address at which we can reach you, consider creating one as it is necessary to receive your bills (bollette).
+- We will send you a mail to confirm your account, after confirmation your account will be ready
+- After creating the account, you'll be asked to enter POD (electricity) or PDR (gas), system automatically links all associated utilities to your profile
+ 
+## App Navigation and Main Features
+### App Main Features
+•	Check bills and payment status
+•	Monitor and manage all the supplies associated with you
+•	Manage payments
+•	Update personal details
+•	Receive important notifications
+•	Track activation status of new services
+•	Monitor consumptions: **Consumption monitoring**:  This service available only in app for electricity supply. It allows you to check your daily and hourly usage and to see how many times you have exceeded your meter’s power limits. Go to "Energia" section →tap on the "Diario dei consumi" and use the service. This service appears in the app only once the supply is active with Lene, which usually happens about one month after the contract is signed
+•	Change electricity meter power (aumento/diminuzione potenza (Kw) contatore)
+ 
+### Section “Home”
+Clients can monitor at a glance the main information and updates about your supplies, such as activation status or payment status. Clients can then explore the details in the relevant sections.
+- **Monitor different supplies**: Clients can monitor all the supplies associated with their Tax Code (Codice Fiscale) directly through the app. Supplies/contracts registered under different names (or Tax Codes) cannot be managed through the same account.
+- **Add new supply**: When a new supply is activated, it will automatically be linked to your account. No action is requested to the client.
+ 
+### Section “Energia”
+In this section, the customer can check all the details related to their active supplies or those in the process of activation.
+-**La tua Fornitura luce o gas**: Section “Home” and "Energia" are organized by supply. If you have multiple supplies linked to your app, you can switch the view using the tab at the top of the screen.
+- **"Le tue bollette"** : The customer can access the history of their bills, which can be viewed at any time and downloaded as PDFs. The customer can also pay any outstanding bills from here.
+- **Contract/supply activation tracking**: To verify if the contract/supply is active, the customer must access the 'Energy' section of the app and check the contract's activation status in the 'Activation status' section
+-**Diario dei consumi**: To monitor the consumption for your electricity supply (daily and hourly usage) and see how many times you have exceeded your meter’s power limits. Go to "Energia" section →tap on the "Diario dei consumi" and utilize the service.. This service appears in the app only once the supply is active with Lene, which usually happens about one month after the contract is signed
+- **Notifications**: Turn on notifications to receive updates when new invoices are issued
+-**Email ricezione bolletta”: Client can monitor and edit the mail address which the client receive bills
+-**Dati pagamento”: Client can monitor and edit the payment method used for the supply
+ 
+### Section “Profilo”
+- Personal details management
+- Consent management and modification
+- Biometric settings configuration
+- Privacy and data preferences
+ 
+### Section “Assistenza”
+- In-app customer service access
+- AI chat (Goffredo) or vocal agent support available 24/7
+- Lene customer service/chat operators can be contacted via phone at 02 89691307 or via chat to provide information from Monday to Friday from 9:00 to 17:00
+ 
+### Bill and Document Management
+- All bills always available in app
+- View and download PDFs anytime
+- Full billing history accessible
+- Payment receipts and confirmations available
+ 
+## App Support and Troubleshooting
+### Common Issues and Solutions related to Section “Profilo”
+- **Phone number changes**: Go to Profile section → tap pencil icon next to phone number and edit
+- **Email address where you receive your bills**: Go to Profile section → tap pencil icon next to “email ricezione bolletta” section and edit. Changing the email address where you receive the bill is only possible once the supply is active with Lene.
+- **Payment method” (eg.: IBAN and PagoPA): Go to Profile section → tap pencil icon next to “dati pagamento” section and edit. Changing the payment method is only possible once the payment method is active with Lene, it usually takes a few days. In the case of a joint bank account (conto cointestato), during the subscription process it is sufficient to provide the details of only one of the account holders.
+-**Consents”:Go to Profile section → tap pencil icon next to “Privacy e consensi” section and edit
+-**Terms and conditions”:Go to Profile section → tap pencil on  “Termini e condizioni” to read all the information
+-**Name and Surname change**: to change name and surname, you need to speak with an operator though chat
+ 
+### Common Issues and Solutions related to Section “Energia”
+- **”Contract/supply activation tracking and status”**: Go to “Energia” section →tap on the “Stato attivazione” to monitor the progress status of their supply/contract activation
+- **”Recover bills”**: Go to “Energia” section →tap on the “Le tue bollette” tab to monitor the progress status of their supply activation
+- **”Bill not received”**: Check your spam mail or Go to “Energia” section →tap on the “Le tue bollette” tab to monitor the progress status of their supply activation
+- **”Monitor payments and pay bills”**: Go to “Energia” section →tap on the “Le tue bollette” tab to monitor payments status and pay bills
+-**Expensive bill received**”: Our priced are fixed for 12 month so energy price and “costi commercializzazione” don’t change, it could be related to above-average consumption.
+- **"Rateizzazione bolletta"**: Go to "Energia" section → tap on "Le tue bollette" → inside you can find the option to request a bill instalment plan. All details are available directly in the app.
+- **"Autolettura Gas"**: Go to "Energia" section → from the tab at the top of the screen select the gas supply → the dedicated meter reading section will appear. Submit your reading directly from there.
+- **"Documenti fornitura"**: Go to "Energia" section → scroll to the bottom of the section → tap the "Documenti" tab → inside you can view and download your contract and all documents related to your electricity or gas supply.
+-**Change payment method**: It can easily done through the Lene app → open the app → using the bottom navigation menu, go to the ‘Energy’ section → click on the pencil icon on the right in the ‘Payment Method’ box. Changing the payment method is only possible once the payment method is active with Lene, it usually takes a few days and you can check if it was successful directly in the app. In the case of a joint bank account (conto cointestato), during the subscription process it is sufficient to provide the details of only one of the account holders. If you switch from PagoPa to direct debit, the security deposit will be refunded on the first available bill; if you switch to PagoPa, a security deposit will be charged on the first bill. For electricity: €5 per kW of contracted power. For gas: €25 if annual consumption is below 500 smc, otherwise €75. The deposit will be refunded if you change payment method, switch supplier, or close the supply.
+-**View the supplies for another address**: Al you supply are automatically associated to your profile. Section “Energia” is organized by supply. To switch supply tap the section on the top of the screen.
+### Common Issues and Solutions related to Security and Access
+- **”Biometric login**: Log in with credentials → go to Profile section → enable fingerprint or facial recognition
+- **”Log out**: Go to Profile section → at the bottom of the page client can log out
+- **”Enhanced security**: Use fingerprint or facial recognition for easier access after initial setup
+-**”Password Recovery**:  On the login screen, tap "Recover credentials", insert your email and we will send you a link to reset password. If you don’t receive the mail check spam
+-**”Username or mail Recovery**:  Do not transfer to human agent and explain via app procedure. Username is a mail, to recover it on the login screen, tap "Recover credentials", insert your “codice fiscale” and we will send you a mail with your username. If you don’t receive the mail check spam
+-**Add a new supply to app**-: No action is required from the customer. The supply will be automatically linked to the app, and you will be able to monitor its status right away
+ 
+# Customer Service and Support
+### App-Based Self-Service
+- **Bill management**: View, download, and track payment status
+- **Account updates**: Modify personal information and contact details
+- **Consumption monitoring**: Track energy usage and consumption patterns (the functionality will be available in the first months of 2026)
+- **Service activation**: Monitor activation status and progress
+- **Contract access**: View and download contract documents
+-**Password recovery**: Client can request to reset password
+-**Username or mail recovery**: Client can request to receive his username via mail
+-**Change electricity meter power (cambio potenza Kw contatore)**: If the customer has an active contract/supply with Lene and wishes to change their meter’s power capacity (e.g., switch to 4, 5, or 6 kW), they must access the 'Energy' section of the app and request a power change from the 'Services' section. Once you’ve submitted the request, the increase will take effect within a few days. You can track the progress of the request directly from the app. This service appears in the app only once the supply is active with Lene, which usually happens about one month after the contract is signed. The cost of the operation depends on how much you want to increase the power; you can find all the details in the app regarding the cost. 
+-**Exemption from canone RAI”**: not available via app or lene web site, the application must be submitted to “agenzia dell’entrate”
+-**request for Bonus sociale”**: not available via app or lene web site, for ISEE is automatic
+-**Switch attivo** (or SWA): not available via app, only web site
+- **Custom offers**: not available via app, only web site
+- **Rateizzazione bolletta**: The customer can request a bill instalment plan directly in the app under "Energia" → "Le tue bollette".
+- **Autolettura Gas**: The customer can submit gas meter readings directly in the app under "Energia" → select the gas supply from the top tab.
+- **Documenti fornitura**: The customer can view and download contract documents under "Energia" → "Documenti" tab.
+### Website Self-Service
+- **Custom offers**: "Offerta per te”  tool for personalized quotes, available only on the web site
+ - **Information access**: Comprehensive information about products and services
+- **Document downloads**: Access to forms and informational materials
+- **FAQ resources**: Extensive frequently asked questions database
+-**Private area on the web site**: There is no private area on the website; to manage their supplies, the customer can download the app.
+## Procedures for Service interruption
+ How to act if electricity supply is interrupted:
+1. Check if too many appliances are running simultaneously (may have exceeded contracted power - check meter switches)
+2. Verify payments are up to date (non-payment may result in service suspension)
+3. Check if problem affects only your home or surrounding area
+4. If none apply, immediately contact distributor emergency number (listed on bill, available 24/7, free of charge)
+ 
+## Reporting of meter (contatore) malfunction/fault related to electricity supply:
+-**The local electricity distributor is responsible for any necessary physical intervention to the meter in case of malfunctions, faults, or safety risks. The supplier (Lene) is not responsible for technical issues with the meter.
+-**You can find the contact details for the emergency service (“Servizio di pronto intervento”) of the distribution company on the front page (frontespizio) of your bill. The number is active 24 hours a day, 7 days a week, and is free of charge from both landlines and mobile phones. 
+-**Change electricity meter power (cambio potenza Kw contatore)**: Unlike technical faults, changing the meter power (e.g., from 3 kW to 6 kW) is an administrative request. The customer can submit the request to change meter power via the Lene App (Section 'Energia' -> tap on 'Service' section) once the supply is active. Once you’ve submitted the request, the increase will take effect within a few days. You can track the progress of the request directly from the app. This service appears in the app only once the supply is active with Lene, which usually happens about one month after the contract is signed. The cost of the operation is detailed in the app.
+",
+      "nome": "Lene-App-Features-and-customer-support-guideline",
+      "url": "",
+      "keywords": ""
+    },
+    {
+    {
+      "titolo": "Chiamate indesiderate e protezione dallo spam",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Ricevo chiamate indesiderate da numeri sconosciuti dopo aver attivato Lene, è una truffa? Come faccio a difendermi? Lene ha condiviso i miei dati? Cosa devo fare se ho già risposto a una chiamata sospetta?",
+      "answer": "# Chiamate indesiderate e protezione dallo spam
+
+## Cosa sta succedendo
+Dopo una richiesta di cambio fornitore, può capitare di ricevere chiamate indesiderate da numeri sconosciuti. Possono essere tentativi di truffa: chi chiama crea urgenza o preoccupazione sull'attivazione della fornitura per indurre la persona a fornire informazioni o ad accettare offerte non richieste.
+
+**Lene non chiama i clienti**, salvo casi eccezionali. In quei rari casi, il contatto avviene **esclusivamente dal numero ufficiale 02 89691307**.
+
+## Come puoi proteggerti
+
+- **Salva sul telefono il numero ufficiale Lene: 02 89691307.** In questo modo riconosci subito una chiamata Lene e puoi chiamarci con sicurezza.
+- **Controlla lo stato della tua attivazione direttamente nell'app Lene**: è il canale più rapido e sicuro.
+- **Diffida** delle chiamate da altri numeri o di chi chiede decisioni immediate o dati sensibili.
+
+## Se hai già risposto a una chiamata sospetta
+
+- **Verifica il numero** confrontandolo con l'ufficiale: 02 89691307.
+- **Non fornire** dati personali, numeri di contratto, codici o IBAN.
+- **Riaggancia** se la conversazione sembra insistente o poco chiara.
+- Contattaci dal **numero ufficiale** o **via WhatsApp** per un supporto sicuro.
+
+## Lene ha condiviso i miei dati?
+
+No. Lene rispetta la tua privacy: i tuoi dati personali e le informazioni del tuo contratto **non vengono condivisi con soggetti terzi non autorizzati** e sono gestiti nel pieno rispetto della normativa sulla privacy. Le chiamate ricevute da numeri diversi dal nostro 02 89691307 non sono in alcun modo riconducibili a Lene. Contattiamo i clienti solo quando necessario, ed esclusivamente da questo numero.",
+      "url": "",
+      "keywords": "spam; chiamata sospetta; chiamate indesiderate; numero sconosciuto; truffa"
+    },
+    {
+      "titolo": "Company Information & Energy Market Context",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "What should I know about Lene, the energy market, and related charges and benefits?",
+      "answer": "## About Lene\n\nLene è una digital company Enel che offre contratti luce e gas totalmente digitali e con tariffe vantaggiose a clienti domestici. Nasce nel 2025 per semplificare il rapporto delle persone con l'energia, con affidabilità e innovazione.\n\n## Energy Market Context\n\n### Mercato Libero dell'Energia\n\nThe \"mercato libero dell'energia\" is a system where customers can freely choose their electricity and gas supplier. Unlike the \"mercato tutelato\", where prices and conditions are set by ARERA, in the \"mercato libero\" you can choose offers that best suit your needs, lock in prices for months, and receive bonuses or discounts. Switching is free and doesn't cause service interruptions.\n\n### Advantages of Mercato Libero\n\nThe \"mercato libero\" gives you the possibility to choose the electricity and gas supplier you prefer, comparing offers that best suit your needs. You can find more convenient rates with fixed prices, and take advantage of promotions, bonuses, or discounts.\n\n### End of Mercato Tutelato\n\nWith the end of the \"mercato tutelato\" (January 1, 2024), customers who received electricity or gas supplies at ARERA-set prices had to choose a \"mercato libero\" supplier. Those who didn't choose in time were automatically moved to the \"Servizio a Tutele Graduali\". Only vulnerable customers remained in the tutela service.\n\n### Vulnerable Customers\n\nVulnerable electricity customers include those who:\n\n- Are in economically disadvantaged conditions (e.g., bonus recipients)\n\n- Have serious health conditions requiring medical-therapeutic electrical equipment\n\n- Have disabilities according to article 3 of law 104/92\n\n- Have utilities in emergency housing following natural disasters or on minor non-interconnected islands\n\n- Are over 75 years old\n\n### Servizio a Tutele Graduali\n\nIntroduced by ARERA to guide customers toward the \"mercato libero\" for electricity. All non-vulnerable household customers who hadn't chosen a \"mercato libero\" supplier by July 1, 2024, were automatically included. Customers can exit at any time by choosing a \"mercato libero\" offer.\n\n### Servizio di tutela per la vulnerabilità gas\n\nThe Gas Vulnerability Protection Service (Servizio di tutela per la vulnerabilità gas) provides economic and contractual terms established by the Italian Regulatory Authority for Energy, Networks and Environment (ARERA), in accordance with Resolution 100/2023/R/com (TIVG).\n\nIt is reserved for customers who meet at least one of the following criteria:\n\nAged 75 or over;\n\nRecipients of social bonuses (pursuant to Art. 1, paragraph 75, Law 124/17);\n\nDisabilities (pursuant to Art. 3, Law No. 104 of February 5, 1992);\n\nUtilities located in emergency housing structures.\n\nTo apply for this service, please contact an operator.\n\n### Costs of Switching\n\nSwitching to the \"mercato libero\" has no cost for the customer: it is free, and you can choose the offer you prefer at any time. Changing suppliers happens without any service interruptions. No penalties, no hidden costs, and lots of freedom of choice.\n\n# Canone RAI Information\n\n## Basic Information\n\n### Definition and Amount\n\n- **Definition**: TV ownership tax, €90 (\"novanta euro\") annually per household\n\n- **Calculation basis**: Per household, not per number of TVs owned\n\n- **Payment schedule**: 10 installments of €9 (\"nove euro\") from January to October\n\n- **Bill inclusion**: Charged on electricity bill\n\n- **Due date**: Same as electricity bill due date\n\n### Payment Integration\n\n- **Billing method**: Canone RAI fee is included in the total amount of your bill\n\n- **Payment deadline**: Must be paid by the due date of the electricity bill\n\n- **Automatic inclusion**: Automatically added to electricity bills for eligible households\n\n- **No separate payment**: Integrated into regular electricity bill payment\n\n## Exemption Categories\n\n### Age-Based Exemption\n\n- **Eligibility**: Over 75 years old\n\n- **Income requirement**: Annual income not exceeding €8,000 (\"ottomila euro\")\n\n- **Household basis**: Applied to entire household if primary holder qualifies\n\n- **Documentation**: Requires income verification\n\n### Equipment-Based Exemption\n\n- **No TV ownership**: Households without television sets\n\n- **No signal reception**: No devices capable of receiving TV signals\n\n- **Device definition**: Includes any equipment capable of TV signal reception\n\n- **Declaration required**: Must declare absence of qualifying equipment\n\n### Professional Exemptions\n\n- **Diplomatic staff**: Diplomats and consular officials\n\n- **International organizations**: Employees of international organizations\n\n- **Foreign military**: Foreign military personnel stationed in Italy\n\n- **Consular officials**: All consular personnel with appropriate status\n\n### Exemption request and Effectiveness\n\n-**\"How to request exemption from canone RAI\"**: The application must be submitted to \"agenzia dell'entrate\" by January 31st to avoid being charged for the entire year. You can submit the application through the Revenue Agency's online portal.\n\n- **Future bills**: Exemption prevents charge on subsequent bills\n\n- **Immediate effect**: Exemption takes effect once processed and approved\n\n- **Ongoing status**: Exemption remains active as long as qualifying conditions met\n\n- **Renewal**: Some exemptions may require periodic renewal or verification\n\n# Bonus Sociale (Social Bonus)\n\n## Overview\n\n### Definition\n\nThe \"bonus sociale\" is a government benefit designed to help families with:\n\n- Low income (economic hardship)\n\n- Members in serious health conditions who use medical-electrical equipment (physical hardship)\n\n### Purpose\n\n- Reduces the amount of bills\n\n- Provides financial support for vulnerable households\n\n- Government-sponsored assistance program\n\n## Types of Bonus Sociale\n\n### Bonus for Economic Hardship\n\n- **Target**: Families with low income\n\n- **Application**: Automatic - no specific request needed\n\n- **Requirement**: Submit Dichiarazione Sostitutiva Unica to obtain updated ISEE certificate\n\n- **Eligibility**: Based on ISEE income thresholds\n\n- **Processing**: If requirements met, bonus appears directly on bill\n\n### Bonus for Physical Hardship\n\n- **Target**: People with serious health conditions requiring medical-electrical equipment\n\n- **Equipment**: Life-saving medical-electrical equipment powered by electricity\n\n- **Requirement**: ASL certificate confirming health conditions and equipment use\n\n- **Application**: Must submit application to Municipality or authorized entity (CAF)\n\n- **Coverage**: Direct discount on electricity bill for households with qualifying medical equipment\n\n### Bill Integration\n\n- **Separate line item**: Bonus appears as distinct credit on bill\n\n- **Amount specification**: Specific bonus amount clearly identified\n\n- **Period coverage**: Credit covers specific time periods as determined by ARERA\n\n- **Authority control**: Amounts and timing controlled directly by ARERA, not suppliers\n\n## Important Notes\n\n### Supplier Independence\n\n- **Provider neutral**: Bonus remains active when switching energy suppliers to Lene\n\n- **Automatic transfer**: No action required when changing suppliers\n\n- **Continuous eligibility**: Switching suppliers doesn't affect bonus eligibility or amounts\n\n- **ARERA management**: Bonus managed by regulatory authority, not individual suppliers\n\n##  Misure Straordinarie ARERA – Eventi Meteorologici Gennaio 2026\n\nL'Autorità di Regolazione per Energia Reti e Ambiente (ARERA) ha approvato alcune misure straordinarie per aiutare le popolazioni colpite dagli eccezionali eventi meteorologici che hanno interessato Calabria, Sardegna e Sicilia tra il 18 e il 22 gennaio 2026.\n\nLe agevolazioni riguardano le forniture situate nei Comuni indicati nell'Ordinanza della Protezione Civile n. 1180 del 30 gennaio 2026 e si applicano agli immobili che risultano, totalmente o parzialmente distrutti, dichiarati inagibili, sgomberati.\n\n**Cosa succede dal 18 gennaio 2026?**\n\nI pagamenti delle bollette (già emesse o da emettere) con scadenza successiva al 18 gennaio 2026 sono sospesi per 6 mesi. La sospensione riguarda sia i costi relativi ai consumi, sia i costi di allaccio, attivazione, disattivazione, voltura e subentro.\n\nSono bloccate le procedure di distacco per morosità, anche se relative a importi non pagati prima del 18 gennaio 2026.\n\n**Come fa il cliente ad accedere alle agevolazioni?**\n\nSe il tuo immobile rientra tra quelli danneggiati:\n\nScarica il modulo per la Dichiarazione sostitutiva disponibile nella pagina \"Le risposte che cerchi\" digitando nella barra di ricerca \"Misure straordinarie per i territori colpiti dal maltempo\"\n\nCompila il modulo e invialo alla casella email info@clienti.lene.it **entro il 30 aprile 2026**",
+      "nome": "Company-Information-Energy-Market-Context",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Billing and Payments",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "How does billing and payments work with Lene? Ogni quanto vengono emesse le bollette? / Qual è la frequenza di fatturazione? / Qual è la data di emissione della prossima bolletta? / Quando riceverò la bolletta?",
+      "answer": "# Billing and Payments\n\n## **Bill (bollette) Delivery and Timing**\n\n### Bill Schedule\n\n-**Issuance Timing**: Bills are issued monthly around the middle of the month, without a fixed date. \n\n- **First bill**: The first bill arrives around the middle of the month following the month of activation. \n\n- **Frequency of bills (bollette) issuance**: Bills (bollette) are issued monthly \n\n- **Format**: The bill is ONLY available in digital format. Digital delivery happens by email and bills are available in app. It is never possible to request paper bills\n\n- **Tracking**: Can track bill issuance directly in the app\n\n- **Separate bills**: One bill per supply - no combined billing available\n\n### Bill Access\n\n- **Primary delivery**: Via email each month\n\n- **App access**: View and download all bills anytime in Lene app under \"Energy\" > \"Your bills\"\n\n- **Permanent access**: All bills always available in app for viewing and PDF download\n\n- **Lost bills**: If the client hasn't received or has lost a bill, they are always accessible in the app\n\n## **Bill Format and Structure**\n\n### New ARERA Format\n\nThe Lene bill follows the new clearer and more understandable format introduced by ARERA, including:\n\n- **Standardized cover**: Key general information\n\n- **Scontrino dell'energia**: Quantity times price breakdown\n\n- **Box dell'offerta**: Summary of accepted contract conditions\n\n### Smart Bill Feature\n\n- **Definition**: Interactive preview of your bill showing key information\n\n- **Contents**: Consumption, charges, total amount due, and due date\n\n- **Purpose**: Helps understand bill details better\n\n- **Important**: Does not replace the regular full bill received by email\n\n## **Payment Methods**\n\n### Available Payment Options\n\n- **Direct debit/IBAN**: Automatic billing to bank account or card. In the case of a joint bank account (conto cointestato), during the subscription process it is sufficient to provide the details of only one of the account holders.\n\nNote that it is also possible to use an IBAN registered to another person (for example, a family member, partner, or landlord) by providing the IBAN number and the account holder's name during subscription.\n\n- **PagoPA**: Payment via postal bulletin through PagoPA service\n\n- **Security deposit**: Required when choosing PagoPA payment method. The deposit is 5€ per kW (ex. for a 3 kW contract, the deposit will be 15€). The deposit will be charged on your first bill and refunded at the end of the contract or if you decide to switch payment method to direct debit.\n\n### Direct Debit Process\n\n- **Automatic withdrawal**: Bill amount automatically withdrawn on due date\n\n- **No manual action**: Don't need to worry about payment timing\n\n- **Payment timing**: Processed exactly on the bill's due date\n\n- **Convenience**: Eliminates risk of missed payments\n\n### PagoPA Payment\n\n- **Locations**: Available at authorized locations\n\n- **Online payment**: Can pay directly through the Lene app\n\n- **Payment slip**: Traditional postal bulletin payment method\n\n- **Flexibility**: Pay when and where convenient\n\n## **Non-Payment and Collections**\n\n### Non-Payment Consequences\n\n- **Reminders**: Initial reminders sent for missed payments\n\n- **Service suspension**: Possible supply suspension for continued non-payment\n\n- **Collection process**: Standard collection procedures apply\n\n- **Service restoration**: Available once payment issues resolved\n\n## **Bill Reading and Understanding**\n\n### Key Information Location\n\n- **Total amount**: Clearly displayed on bill cover\n\n- **Due date**: Prominently shown with payment amount\n\n- **Consumption details**: Detailed in \"Scontrino dell'energia\" section\n\n- **Contract terms**: Summarized in \"Box dell'offerta\" section\n\n### Monthly Billing Cycle (billing frequency)\n\n- **Bills are Issued monthly for free-market offers**\n\n- **Separate processing**: Each supply billed independently\n\n- **Consistent timing**: Regular monthly schedule maintained\n\n###POD/PDR Definition\n\n-**POD**: POD is the acronym for “Point of Delivery.” It is an alphanumeric code made up of 14 or 15 characters and identifies your electricity meter and supply. The code is assigned when the connection to the electricity grid is made, at the time of meter installation. You can find the POD on your electricity bill and on the electricity meter itself.\n\n-**PDR**: Acronym for “Punto di Riconsegna” (Redelivery Point). It is a unique 14-digit code used to identify your gas supply. You can find it on your bill.\n\n## **Bill History and Management**\n\n### Historical Access of bills in APP\n\n- **Full history**: All past bills accessible in app\n\n- **Download capability**: Can download any bill as PDF\n\n- **Payment tracking**: View payment status for all bills\n\n- **Receipt storage**: Access to all payment confirmations",
+      "nome": "Billing-and-Payments",
+      "url": "",
+      "keywords": "biometrico;accesso;app"
+    },
+    {
+      "titolo": "Contracts, Legal and Renewal Information",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "What happens at the renewal of my supply?\n\nWhat should I know about my Lene contract, terms, and legal rights?\n\nCome cambia il prezzo dell'offerta/contratto alla scadenza del periodo fisso?\n\nCos'è il diritto di ripensamento?",
+      "answer": "## Contract Types and Structure\n\n### Light Contract\n\n- **Definition**: Simplified contract version received by email after signing\n\n- **Contents**: Contains only the most important information about your supply\n\n- **Purpose**: Makes contract review easier and faster\n\n- **Accessibility**: Delivered immediately by email for quick reference\n\n### Full Contract\n\n- **Availability**: Always accessible in the Lene app\n\n- **Contents**: Complete contract details and terms\n\n- **Access**: View and download anytime from app\n\n- **Reference**: Comprehensive terms and conditions document\n\n## Contract Terms and Conditions\n\n### Pricing and Duration\n\n- **Fixed-price offers**: Energy price and commercial costs (costi di commercializzazione) locked for defined period\n\n- **Duration**: 12-month price lock for current offers\n\n- **Price guarantee**: Both energy price and commercial costs guaranteed for specified period\n\n- **Contract Renewal**: At the end of the fixed period, the contract is updated based on current market conditions and prices. Any price modifications will be communicated at least 3 months in advance via email and through the app.\n\n### Contract Flexibility\n\n- **Cancellation**: Cancel anytime without additional costs\n\n- **No penalties**: No activation fees or exit penalties\n\n- **Free switching**: Can switch to another provider anytime without costs\n\n- **No hidden fees**: Simple and transparent with no additional services or hidden costs\n\n## Legal Rights and Protections\n\n### Fast Activation Option\n\n- **Waiver option/Diritto di ripensamento**: The right of withdrawal (diritto di ripensamento) allows for the cancellation of the contract prior to the actual activation of the supply. During this 14-day period, the processing of the application is suspended. This right may be waived by requesting fast-track activation of the supply.\n\n- **Benefit**: Start saving with Lene offers as soon as possible\n\n- **Choice**: Optional - customer can choose standard or fast activation\n\n- **Convenience**: Allows faster switching process when desired\n\n### Service Continuity Guarantee\n\n- **No interruption**: Supply continues during provider switching\n\n- **Seamless transition**: Automatic switch without service disruption\n\n- **Appliance operation**: All electrical appliances continue working during switch\n\n- **Reliability**: Guaranteed continuous service throughout transition\n\n## Legal Documents and References\n\n### Technical and Economic Conditions (CTE)\n\n- **Definition**: Defines how energy is supplied and its costs\n\n- **Coverage**: Combines technical and economic aspects of supply\n\n- **Reference**: Technical documentation of supply method and cost structure\n\n- **Availability**: Details available in full contract documentation\n\n### General Supply Conditions\n\n- **Purpose**: Document defining rules and rights between customer and supplier\n\n- **Coverage**: Complete terms of supplier-customer relationship\n\n- **Legal framework**: Establishes mutual rights and obligations\n\n- **Reference**: Comprehensive legal terms and conditions\n\n### Cadastral data form (modulo dei dati catastali)\n\n-**Purpose**: Document containing property identification and ownership information required for supply activation\n\n-**Reference**: The form is available at https://www.lene.it/. If you need further assistance you can contact one of our operators\n\n## Consent and Privacy\n\n### Required Consents\n\n- **Service consent**: Basic consent for energy supply service\n\n- **Data processing**: Consent for necessary data processing for service delivery\n\n- **Legal basis**: Required consents for contract execution\n\n### Optional Consents\n\n- **Marketing consent**: Receive Lene updates about new saving opportunities\n\n  - Purpose: Email updates about Lene products and services\n\n  - Control: Can be modified or withdrawn anytime in app Profile section\n\n- **Third-party consent**: Receive partner company saving opportunities\n\n  - Purpose: Email updates about partner company offers\n\n  - Control: Can be modified or withdrawn anytime in app Profile section\n\n### Data Protection\n\n- **Privacy policy**: Available on https://www.lene.it/ website in dedicated section\n\n- **Data usage**: Used only to provide best possible service\n\n- **No spam policy**: Commitment to relevant communications only\n\n- **User control**: Full control over communication preferences\n\n## Regulatory Compliance\n\n### ARERA Regulations\n\n- **Bill format**: Follows new ARERA format for clarity and transparency\n\n- **Regulatory compliance**: All operations comply with ARERA requirements\n\n- **Standardization**: Adheres to regulatory standards for energy supply\n\n- **Consumer protection**: Benefits from ARERA consumer protection measures\n\n### Market Regulations\n\n- **Free market**: Operations within Italian free energy market (mercato libero)\n\n- **Switching rights**: Full rights to change supplier without penalties\n\n- **Price transparency**: Clear pricing structure as required by regulations\n\n- **Consumer rights**: Full protection under Italian energy market regulations\n\n## Contract Modifications and Updates\n\n### Price Changes\n\n- **Advance notice**: 3-month advance notice before price changes\n\n- **Renewal terms**: Contract renewed based on market conditions after fixed period\n\n- **Transparency**: Clear communication via email and app about any price adjustments\n\n- **Customer choice**: Can switch providers if unsatisfied with new terms\n\n### Contract Updates\n\n- **Notification process**: Changes communicated via email and app\n\n- **Legal requirements**: All updates comply with regulatory requirements\n\n- **Customer rights**: Rights maintained throughout contract modifications\n\n- **Documentation**: All changes documented and accessible in app",
+      "nome": "Contracts-and-Legal-Information",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Glossario",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Quali sono i termini chiave per comprendere il mondo dell'energia?",
+      "answer": "Accise\n\nImposte indirette applicate sui consumi di energia elettrica e gas, fissate dallo Stato.\n\nAllaccio\n\nOperazione tecnica che collega un'utenza alla rete elettrica o del gas.\n\nAltre partite\n\nLa voce altre partite è presente nelle bollette luce in cui sono addebitati o accreditati importi diversi dalla spesa per la materia energia, dalla spesa per il trasporto e la gestione del contatore e dalle altre voci presenti nella sintesi degli importi fatturati.\n\nArera\n\nAutorità di Regolazione per Energia Reti e Ambiente. Ente che stabilisce le regole e le tariffe di riferimento per luce e gas.\n\nAttivazione\n\nProcedura per rendere attiva una fornitura dopo un subentro o un nuovo allaccio.\n\nAutoconsumo\n\nEnergia elettrica prodotta e consumata direttamente, spesso con impianti fotovoltaici.\n\nAutolettura\n\nComunicazione volontaria dei dati di consumo da parte del cliente, utile per avere bollette reali.\n\nAutoproduzione\n\nEnergia prodotta in proprio tramite impianti come fotovoltaico, eolico o cogenerazione.\n\nBolletta 2.0\n\nModello di bolletta introdotto da ARERA, più chiaro e trasparente per i clienti. \n\nBonus sociale\n\nIl bonus sociale è uno sconto in bolletta riconosciuto alle famiglie in disagio economico o fisico (automatico con ISEE basso)\n\nBT (bassa tensione)\n\nFornitura elettrica fino a 1.000 Volt, tipica delle utenze domestiche.\n\nBioraria\n\nTariffa che prevede prezzi diversi per fasce orarie (F1, F2, F3).\n\nBlocco di prezzo\n\nOfferta commerciale in cui il costo dell'energia è fisso per un periodo prestabilito.\n\nCambio fornitore\n\nPassaggio a un nuovo venditore di energia/gas. È gratuito e non comporta interruzioni di servizio.\n\nCCR\n\nLa CCR, il cui acronimo sta per \"Componente Copertura Rischi\". La CCR è una componente obbligatoria della bolletta del gas nel Mercato Tutelato. D'altra parte, la presenza e il valore della CCR non sono obbligatori nel mercato libero. Infatti, in questo caso i fornitori sono liberi di decidere se includerla nelle loro offerte e di stabilire il valore. ll suo scopo è di coprire i costi sostenuti dai venditori, in modo che i clienti del Mercato di Tutela possano essere protetti da variazioni improvvise del prezzo del gas all'ingrosso, causate a loro volta da variazioni della domanda del gas.\n\nClasse del misuratore\n\nCorrisponde alla classe del contatore installato presso il cliente e risulta rilevante ai fini dell'applicazione di quanto fatturato per il servizio di distribuzione e degli eventuali indennizzi ai quali potrebbero avere diritto i clienti finali.\n\nClausola prezzo variabile\n\nCaratteristica delle offerte luce e gas indicizzate ai mercati all'ingrosso.\n\nCIP6    \n\nContributo per incentivare la produzione di energia da fonti rinnovabili e assimilate. Ancora presente in bolletta come onere di sistema.\n\nCliente finale\n\nChi utilizza energia elettrica o gas per i propri consumi (famiglie, imprese, enti).\n\nCliente vulnerabile\n\nCategoria tutelata (es. over 75, disabili, residenti in zone disagiate).\n\nCMEM (Componente Materia Prima Gas)\n\nCopre i costi di approvvigionamento del gas naturale (costo della materia prima). È aggiornata periodicamente da ARERA per i clienti in tutela.\n\nCoefficiente correttivo (C)\n\nQuesto parametro, chiamato anche coefficiente di conversione, serve a trasformare il volume di gas che il contatore registra in metri cubi mc nelle condizioni reali di utilizzo, in standard metri cubi smc, l'unità di misura che i fornitori usano per fatturarci l'energia. Senza di lui pagheremmo importi distorti, perché temperatura, altitudine e pressione cambiano da una città all'altra e modificano la densità del gas. Il coefficiente C, quindi, viene utilizzato per uniformare il consumo di gas di tutte le abitazioni, garantendo equità a livello nazionale.\n\nCodice PDR\n\nPunto di riconsegna per il gas; il codice PRD  identifica univocamente la fornitura.\n\nCodice POD\n\nPunto di prelievo per l'energia elettrica; il codice POD  identifica univocamente la fornitura.\n\nConguaglio\n\nRettifica dei consumi precedentemente stimati sulla base di letture reali.\n\nConsumi effettivi\n\nQuantità di energia elettrica o gas realmente utilizzata dal cliente, rilevata dal contatore (in kWh o Smc).\n\nConsumi fatturati\n\nQuantità di energia o gas addebitata in bolletta. Può coincidere con i consumi effettivi (se il contatore è teleletto o se hai fatto autolettura) oppure essere stimata in assenza di dati reali.\n\nConsumi stimati\n\nStima dei consumi in assenza di autolettura o telelettura.\n\nContatore elettronico (smart meter)\n\nStrumento digitale che misura i consumi e permette la telelettura e la gestione da remoto.\n\nContatore gas tradizionale\n\nAncora diffuso in alcune zone, non digitale, richiede lettura manuale.\n\nCPR\n\n(Contributo al Piano di Risanamento) è una componente della bolletta del gas che copre i costi legati al riequilibrio del sistema di approvvigionamento.\n\nDeposito cauzionale\n\nSomma che il fornitore può richiedere come garanzia al momento dell'attivazione o in caso di morosità.\n\nDisdetta contratto\n\nTermine usato dagli utenti per indicare la chiusura del contratto, in realtà corrisponde al recesso.\n\nDispBT\n\nComponente tariffaria che serve a compensare i costi dovuti a morosità e furti di energia, i costi di uscita dei clienti dal servizio di maggior tutela non coperti dal prezzo di maggior tutela e gli incentivi alla diffusione delle bollette digitali.\n\nDistributore locale\n\nSocietà che gestisce fisicamente le reti di distribuzione elettrica e gas nella zona, responsabile dei contatori e degli interventi tecnici (es. E-Distribuzione, Italgas).\n\nDomanda di energia\n\nQuantità di energia richiesta dagli utenti finali in un determinato periodo.\n\nDomanda di energia\n\nRichiesta di cambio fornitore effettuata da un cliente.\n\nEnergia reattiva\n\nQuota di energia non utilizzata per produrre lavoro ma necessaria per il funzionamento degli impianti elettrici (soprattutto industriali).\n\nEnergia rinnovabile\n\nEnergia prodotta da fonti naturali non esauribili come sole, vento, acqua e biomasse.\n\nEnergia verde\n\nOfferte commerciali basate al 100% su fonti rinnovabili certificate.\n\nEsenzione accise\n\nAgevolazione che prevede il non pagamento delle accise in determinati casi di consumo.\n\nFasce orarie (F1, F2, F3)\n\nF1 = ore di punta (lun–ven 8–19), F2 = intermedie, F3 = serali, notturne e weekend. Ogni fascia ha un prezzo differente per kWh consumato.\n\nFatturazione stimata\n\nBolletta calcolata su consumi presunti, in attesa di dati reali da autolettura o telelettura.\n\nFornitore\n\nSocietà che vende energia elettrica o gas al cliente finale (es. Lene).\n\nFornitura\n\nIl contratto attivo di energia elettrica o gas, che collega cliente, fornitore e punto di prelievo.\n\nFornitura sospesa\n\nInterruzione temporanea della fornitura per morosità o su richiesta del cliente.\n\nFRNP (Fondo oneri rinnovabili non programmabili)\n\nComponente in bolletta che copre gli incentivi per le fonti rinnovabili non programmabili (es. eolico, solare).\n\nGestore di rete\n\nEnti che gestiscono le reti di trasmissione nazionali e garantiscono sicurezza e continuità del servizio\n\nGRAD (Gradualità)\n\nComponente di spesa necessaria a coprire i costi che i venditori di gas devono affrontare per sostituire gradualmente i vecchi contratti di acquisto di gas all'ingrosso.\n\nGS\n\nComponente che serve per finanziare i bonus gas destinati ai clienti domestici in disagio economico. Si applica al gas consumato (€/Smc) ed è pari a zero per i domestici.\n\nGAS release\n\nMeccanismo straordinario regolato da ARERA che consente alle imprese di approvvigionarsi di gas a prezzi calmierati (utile per intercettare ricerche legate a crisi energetiche).\n\nGSE\n\nSocietà pubblica che promuove lo sviluppo sostenibile attraverso incentivi a rinnovabili ed efficienza energetica.\n\nHub del gas\n\nMercato virtuale di scambio del gas naturale; il principale europeo è il TTF olandese.\n\nHome energy management system (HEMS)\n\nSistema per monitorare e ottimizzare i consumi energetici domestici tramite smart meter e domotica.\n\nIndirizzo di fornitura\n\nLuogo fisico in cui vengono consegnati energia elettrica o gas naturale, diverso dal domicilio di fatturazione.\n\nInterrompibilità\n\nServizio che consente al gestore di rete di interrompere temporaneamente la fornitura a grandi clienti industriali in cambio di un incentivo, per garantire stabilità al sistema elettrico.\n\nIntervento tecnico\n\nOperazione effettuata dal distributore locale su richiesta (es. riattivazione contatore, verifica guasto, spostamento).\n\nInterruzione programmata\n\nSospensione temporanea della fornitura dovuta a lavori di manutenzione o potenziamento della rete.\n\nIVAFE (storico)\n\nImposta sul valore delle attività finanziarie detenute all'estero, spesso confusa dagli utenti con l'IVA energia: utile per intercettare ricerche errate.\n\nIVA\n\nImposta sul valore aggiunto applicata al totale della bolletta (10% o 22% a seconda della tipologia di fornitura).\n\nkWh (chilowattora)\n\nUnità di misura dell'energia elettrica: corrisponde al consumo di un apparecchio da 1.000 W acceso per un'ora.\n\nkWp (chilowatt di picco)\n\nUnità di misura della potenza massima erogabile da un impianto fotovoltaico in condizioni standard.\n\nkW (chilowatt)\n\nUnità di misura della potenza elettrica. Nelle forniture domestiche indica la potenza impegnata del contatore (es. 3 kW).\n\nLetture rilevate\n\nLettura effettiva corrispondente al numero che compare sul display del contatore a una certa data (spesso l'ultimo giorno del mese). È rilevata dal distributore, solitamente da remoto, e comunicata al venditore.\n\nLetture stimate\n\nValore ipotetico indicato in bolletta quando non sono disponibili letture reali o autoletture.\n\nLivello massimo di potenza rilevata\n\nIndica la potenza massima effettivamente prelevata in ciascun mese. Aiuta a valutare se la potenza contrattuale impegnata (es. 3 kW, 4,5 kW, ecc.) è adeguata o da ottimizzare.\n\nLinea elettrica\n\nInsieme di conduttori che trasportano energia elettrica dal distributore al punto di fornitura.\n\nLuce monoraria\n\nTipologia di tariffa con prezzo unico per kWh, indipendente dall'orario di consumo.\n\nLuce bioraria/trioraria\n\nTariffe con costi differenziati a seconda delle fasce orarie di utilizzo (F1, F2, F3).\n\nMaggior tutela\n\nRegime regolato da ARERA per i clienti che non hanno scelto il mercato libero. I prezzi vengono aggiornati trimestralmente dall'Autorità.\n\nMatricola contatore\n\nNumero univoco che identifica il contatore di un cliente (sia elettrico sia gas). Serve per pratiche di sostituzione, manutenzione o contestazioni.\n\nMCT (Misure compensative nucleare)\n\nComponente della spesa per oneri di sistema destinata a finanziare le misure di compensazione ai territori che ospitano centrali nucleari, impianti del ciclo del combustibile o il futuro deposito nazionale delle scorie.\n\nMercato libero\n\nRegime in cui il cliente sceglie liberamente venditore e offerta luce/gas, con tariffe a prezzo fisso o variabile.\n\nMisura dei consumi\n\nProcesso con cui vengono rilevati i consumi di energia elettrica o gas, tramite contatori elettronici o tradizionali.\n\nMorosità\n\nSituazione in cui il cliente non paga le bollette entro le scadenze. Può comportare solleciti, interessi di mora e sospensione della fornitura.\n\nNumero cliente\n\nCodice identificativo assegnato dal fornitore per gestire contratti e fatturazioni.\n\nNumero verde\n\nServizio telefonico gratuito messo a disposizione dai fornitori per assistenza commerciale e tecnica.\n\nNuova attivazione\n\nProcedura per attivare un'utenza in un'abitazione o locale mai collegato alla rete.\n\nOneri di sistema\n\nVoci della bolletta che coprono costi generali legati al sistema elettrico nazionale (es. incentivi rinnovabili, smantellamento nucleare, bonus sociali).\n\nOfferta a prezzo fisso\n\nPrezzo dell'energia bloccato per un determinato periodo (es. 12 o 24 mesi). Protegge da aumenti di mercato.\n\nOfferta a prezzo variabile\n\nPrezzo dell'energia indicizzato ai mercati all'ingrosso (PUN per elettricità, PSV per gas). Può variare mensilmente o trimestralmente.\n\nOpzione dual fuel\n\nOfferta commerciale che prevede la fornitura congiunta di energia elettrica e gas con un unico contratto.\n\nPCV (Prezzo Commercializzazione e Vendita)\n\nSpese fisse per la gestione commerciale del cliente (call center, fatturazione)\n\nPD (Prezzo Dispacciamento)\n\nCosto del servizio che mantiene equilibrio tra energia prodotta e consumata.\n\nPE (Prezzo Energia)\n\nCosto dell'energia acquistata dal fornitore e rivenduta al cliente finale.\n\nPerdite di rete\n\nDifferenza tra energia immessa nella rete e quella effettivamente utilizzata dai clienti finali (dispersioni nei cavi).\n\nPOD (Point of Delivery)\n\nCodice alfanumerico (inizia con \"IT\") che identifica in modo univoco il punto di prelievo dell'elettricità. Inizia sempre con 'IT' ed è composto da 14 o 15 caratteri alfanumerici. Se il codice POD è di 15 caratteri, nel modulo di sottoscrizione sul sito web di Lene devono essere inseriti solo i primi 14. Il POD si trova sulla bolletta elettrica, in alto nella seconda pagina.\n\nPDR (Punto di Riconsegna)\n\nCodice numerico (14 cifre) che identifica in modo univoco il punto fisico di consegna del gas.\n\nPolizza cauzionale\n\nGaranzia che può essere richiesta ai clienti non domestici al posto del deposito cauzionale.\n\nPotere calorifico superiore (PCS)\n\nQuantità di energia contenuta in un metro cubo standard di gas, usata per convertire i consumi da Smc a kWh.\n\nPotenza disponibile\n\nPotenza massima prelevabile dal contatore, leggermente superiore a quella impegnata.\n\nPotenza impegnata\n\nLivello di potenza definito dal contratto (es. 3 kW per uso domestico standard).\n\nPrezzo a consumo\n\nModalità tariffaria in cui si paga solo l'energia effettivamente consumata.\n\nPrezzo fisso\n\nPrezzo dell'energia bloccato per un periodo determinato (es. 12 o 24 mesi).\n\nPrezzo variabile\n\nPrezzo dell'energia indicizzato ai mercati all'ingrosso (PUN per elettricità, PSV per gas).\n\nPrezzi unitari\n\nPrezzi pagati per ciascun kWh consumato e per ciascun kW di potenza impegnata, calcolati su base temporale (giorni, mesi, anno).\n\nPronto intervento\n\nNumero gratuito del distributore per guasti, fughe di gas o emergenze (obbligatorio in bolletta).\n\nPSV (Punto di Scambio Virtuale)\n\nPrezzo di riferimento del gas naturale in Italia, stabilito dal mercato all'ingrosso.\n\nPUN (Prezzo Unico Nazionale)\n\nPrezzo medio dell'energia elettrica all'ingrosso in Italia.\n\nQVD (Quota di Vendita al Dettaglio)\n\nComponente che copre i costi fissi di gestione commerciale della fornitura di gas naturale (analoga al PCV per l'elettricità).\n\nQuota energia\n\nParte variabile della bolletta, calcolata sui consumi effettivi o stimati (€/kWh per l'elettricità, €/Smc per il gas).\n\nQuota fissa\n\nParte della bolletta che si paga indipendentemente dai consumi, collegata alla disponibilità della fornitura.\n\nQuota potenza\n\nCosto della potenza impegnata (es. 3 kW), pagato indipendentemente dai consumi di energia.\n\nQuota trasporto\n\nQuota della bolletta che copre i costi di trasporto e gestione del contatore.\n\nRateizzazione\n\nPossibilità di pagare una bolletta elevata a rate, di solito senza interessi aggiuntivi, come stabilito da ARERA.\n\nRecesso\n\nDiritto del cliente di sciogliere il contratto. Lene non applica penali per il recesso dal contratto.\n\nRicalcolo\n\nCorrezione di una bolletta a seguito di nuove letture o conguagli.\n\nRifiuto subentro\n\nCaso in cui il fornitore può rifiutare una richiesta di subentro in presenza di morosità pregresse sul punto di fornitura.\n\nRinnovo contratto\n\nProroga o sostituzione del contratto di fornitura con nuove condizioni economiche o commerciali.\n\nRitiro dedicato (RID)\n\nRegime gestito dal GSE che consente ai produttori di energia da fonti rinnovabili di vendere al Gestore dei Servizi Energetici l'energia immessa in rete.\n\nServizio di salvaguardia\n\nServizio attivato per i clienti rimasti senza fornitore (es. fallimento del venditore), garantisce la continuità della fornitura ma a condizioni economiche meno convenienti.\n\nServizio di tutela\n\nFornitura di gas a condizioni economiche e contrattuali stabilite da ARERA, per clienti domestici e condomini con uso domestico fino a 200.000 Smc annui.\n\nServizio di trasporto e gestione contatore\n\nSpese per portare energia/gas al cliente e per misurare i consumi tramite il contatore.\n\nSmart home (domotica)\n\nTecnologie integrate con smart meter e dispositivi connessi per monitorare e ottimizzare i consumi energetici.\n\nSmc (Standard metro cubo)\n\nUnità di misura del gas naturale, standardizzata a condizioni di temperatura e pressione.\n\nSpesa per la materia energia\n\nQuota della bolletta che copre i costi di acquisto e fornitura dell'energia o del gas.\n\nSwitching\n\nIl passaggio del cliente da un fornitore a un altro nel mercato libero, gratuito e senza interruzioni di servizio.\n\nSubentro\n\nAttivazione della fornitura quando il contatore è già installato ma disattivato.\n\nTariffa monoraria\n\nPrezzo unico dell'energia, indipendente dall'orario di consumo.\n\nTariffa bioraria/trioraria\n\nPrezzi diversi dell'energia a seconda delle fasce orarie (F1, F2, F3).\n\nTTF (Title Transfer Facility)\n\nMercato di riferimento europeo per il prezzo del gas naturale.\n\nTutele vulnerabili\n\nRegime di protezione per clienti over 75 o in condizioni di fragilità economica o sociale, successivo alla fine della maggior tutela.\n\nUC3\n\nComponente per coprire gli squilibri dei sistemi di perequazione dei costi di trasporto dell'energia elettrica sulle reti di trasmissione e distribuzione.\n\nUC4\n\nComponente per coprire i maggiori costi di piccole aziende elettriche (soprattutto in isole minori) e distributori con meno di 5.000 clienti. Dal 2018 confluita in ARIM.\n\nUC6\n\nComponente che copre i costi legati allo smantellamento delle centrali nucleari e alla gestione del combustibile nucleare residuo.\n\nUC7\n\nComponente che finanzia le attività di ricerca e sviluppo nel settore elettrico (oggi residuale).\n\nUG1\n\nComponente che garantisce l'equilibrio tra costi sostenuti dai distributori e ricavi dalle tariffe.\n\nUG2\n\nComponente che copre gli squilibri tra quanto i venditori incassano dai clienti e quanto devono corrispondere al sistema (compensazione).\n\nUG3\n\nComponente che copre i costi delle agevolazioni tariffarie per i clienti finali delle isole minori non interconnesse alla rete nazionale.\n\nUtenza\n\nPunto di fornitura di energia elettrica o gas associato a un cliente (domestico o aziendale).\n\nVenditore (o fornitore)\n\nSocietà con cui stipuli il contratto di fornitura: stabilisce prezzo e condizioni commerciali.\n\nVolt (V)\n\nUnità di misura della tensione elettrica.\n\nVoltura\n\nLa voltura è un'operazione che consente di cambiare l'intestatario di un contratto di fornitura senza interrompere l'erogazione di energia/gas.\n\nWatt (W)\n\nUnità di misura della potenza.\n\nWattora (Wh)\n\nUnità di misura dell'energia elettrica (1 W utilizzato per 1 ora).\n\nWp (Watt di picco)\n\nPotenza nominale massima di un impianto fotovoltaico in condizioni standard.\n\nZona tariffaria\n\nArea geografica che influenza il coefficiente di conversione (C) per il gas.",
+      "nome": "Glossario",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Cos'è il codice POD",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Cosa significa POD?\n\nQual è il ruolo del POD per passare a Lene?",
+      "answer": "Nel mercato dell'energia elettrica, il POD rappresenta un elemento chiave, una sorta di \"codice fiscale\" dell'utenza che ti permette di gestire la tua fornitura e soprattutto di passare a Lene in modo semplice e veloce.\n\nChe cosa significa POD\n\nL'acronimo POD deriva dall'inglese \"Point Of Delivery\", che si traduce letteralmente in \"punto di consegna\". Questa sigla indica, quindi, il punto geografico preciso in cui avviene il prelievo dell'energia elettrica. Ogni utenza è dotata di un codice POD univoco, che non cambia mai, nemmeno in caso di modifica del fornitore, voltura (cambio di intestatario) o subentro (riattivazione di un contatore disattivato).\n\nOrigine e struttura del codice POD\n\nIl POD viene assegnato dal distributore locale al momento dell'allacciamento alla rete elettrica e dell'installazione del contatore. Si tratta di un codice alfanumerico composto da 14 caratteri nella forma standard, o 15, che inizia sempre con la sigla \"IT\" per indicare l'Italia.\n\nLa sua struttura è così composta:\n\nCodice Nazione (IT): le prime due lettere identificano la nazione della fornitura.\n\nCodice Distributore: le successive tre cifre indicano l'impresa di distribuzione competente per quella zona.\n\nCodice Servizio (E): la lettera \"E\" è un carattere fisso che sta a significare \"energia elettrica\".\n\nCodice Punto di Prelievo: le otto o nove cifre seguenti costituiscono la parte numerica che identifica in modo univoco il punto di prelievo.\n\nChiave di controllo (opzionale): in alcuni casi, può essere presente una quindicesima cifra con funzione di controllo.\n\nLa differenza tra POD e altri codici della bolletta\n\nÈ importante non confondere cos'è il POD con altri codici presenti sulla bolletta dell'energia elettrica, in quanto ognuno ha una funzione specifica:\n\nCodice cliente: a differenza del POD, che identifica l'utenza, il codice cliente indica il contratto specifico con un determinato fornitore. Varia quindi ogni volta che si decide di cambiare società di vendita.\n\nCodice PDR (Punto di Riconsegna): sebbene abbia una funzione analoga, si riferisce alla fornitura di gas naturale. Anch'esso è composto da 14 cifre, ma è esclusivamente numerico e identifica il punto fisico in cui il gas viene consegnato all'utente.\n\nMatricola del contatore: numero che identifica l'apparecchio fisico (il contatore) e non il punto di fornitura. Pertanto, in caso di sostituzione del contatore per un guasto o un ammodernamento, la matricola cambierà, ma il codice POD rimarrà invariato.\n\nDove si trova il POD sulla bolletta\n\nIndividuare il codice POD è un'operazione semplice ma fondamentale per la gestione della propria utenza elettrica. Sulla bolletta della luce, sebbene la veste grafica possa variare da un fornitore all'altro, la disposizione delle informazioni segue una struttura standardizzata.\n\nIl codice POD è solitamente situato in prima o seconda pagina, all'interno della sezione dedicata ai \"Dati della fornitura\" o \"Caratteristiche tecniche della fornitura\". Raggruppa tutti i dati identificativi dell'utenza, come l'indirizzo di fornitura, la potenza impegnata e, appunto, il POD. Generalmente, è posizionato in alto, vicino ai dati anagrafici dell'intestatario e al codice cliente.\n\nEsempio di POD in bolletta luce\n\nPer riconoscere facilmente il POD, è utile sapere come si presenta. Un esempio pratico di codice POD bolletta potrebbe essere: IT001E12345678.\n\nIT: indica la nazione, in questo caso l'Italia.\n\n001: è il codice che identifica il distributore locale.\n\nE: carattere fisso che sta per \"energia elettrica\".\n\n12345678: sono le 8 cifre che identificano in modo univoco il punto di prelievo.\n\nA volte, può essere presente una quindicesima cifra finale con funzione di chiave di controllo.\n\nCome leggere il POD sul contatore\n\nQualora non si avesse una bolletta a portata di mano, è possibile risalire al codice POD direttamente dal contatore elettronico. La procedura può variare leggermente in base al modello dell'apparecchio.\n\nGeneralmente, è necessario premere il pulsante di lettura presente sul contatore (spesso l'unico disponibile) più volte consecutivamente. Sul display digitale appariranno in sequenza diverse informazioni, come la matricola del contatore, i consumi suddivisi per fasce orarie e, infine, il codice POD.\n\nIl ruolo del POD per passare a Lene\n\nNel contesto del mercato libero dell'energia, il POD assume un'importanza cruciale. Quando un cliente decide di cambiare società di vendita per accedere a tariffe più convenienti, il nuovo fornitore necessita del codice per identificare senza alcun dubbio il punto di prelievo da acquisire.\n\nImmobili e utilizzi esclusi: I POD destinati a usi diversi da quelli residenziali o domestici (ad esempio: garage, attività commerciali, partita iva, cantine, locali condominiali o altre forniture non domestiche) non sono al momento idonei alla sottoscrizione di offerte/attivazione di contratti.\n\nCos'è il POD non contendibile e cosa significa\n\nCon l'espressione \"POD non contendibile\" indica che il punto di prelievo, anche se il contatore appare disattivato, risulta ancora legalmente associato a un contratto di vendita attivo.\n\nQuesta condizione si verifica spesso quando la fornitura è stata interrotta per morosità, ma il contratto del precedente intestatario non è stato formalmente cessato. Di conseguenza, un nuovo cliente non può effettuare un normale subentro scegliendo liberamente un fornitore, perché il POD non è ancora \"libero\" sul mercato.\n\nPer regolarizzare la situazione è necessario rivolgersi al venditore a cui il punto è ancora collegato e richiedere una voltura senza accollo. Se il nuovo intestatario dimostra di non avere legami con il cliente moroso precedente, dovrà sostenere soltanto gli oneri amministrativi della pratica, mentre il debito pregresso resta esclusivamente a carico del vecchio intestatario.\n\nFAQ\n\nDove trovo il POD?\n\nIl modo più semplice e veloce per trovare il codice POD è consultare una qualsiasi bolletta della luce. Solitamente, si trova nella prima o seconda pagina, all'interno della sezione \"Dati Fornitura\" o \"Caratteristiche Tecniche\", insieme ad altre informazioni come l'indirizzo e il codice fiscale dell'intestatario.\n\nPosso avere un contratto di luce senza un codice POD?\n\nNo, non è possibile attivare alcun contratto di fornitura di energia elettrica senza il POD. Questo codice è l'identificativo univoco del punto di prelievo e serve al fornitore per associare il contratto all'utenza corretta.\n\nIl mio POD cambia se cambio abitazione?\n\nSi, perché il POD è un codice che identifica in modo univoco un punto fisico specifico. Quando ti trasferisci in un'altra casa, dovrai usare il POD associato a quel nuovo indirizzo",
+      "nome": "Cos-è-il-codice-POD",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Che cos'è il PDR",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Che cosa significa PDR?",
+      "answer": "Nel mercato del gas, ogni utenza ha un proprio codice identificativo univoco: il PDR.  Il codice riveste un'importanza fondamentale agendo come una vera e propria carta d'identità per ogni utenza.\n\nL'acronimo PDR sta per \"Punto di Riconsegna\". Questo termine tecnico indica il punto fisico esatto in cui il gas naturale viene consegnato dalla rete di distribuzione del fornitore e prelevato dal cliente finale. In altre parole, corrisponde alla posizione geografica del contatore del gas installato presso un'abitazione, un condominio o un'azienda.\n\nCos'è il PDR e perché è importante nel gas\n\nIl PDR gas è un codice numerico composto da 14 cifre, assegnato dal distributore locale nel momento in cui viene realizzato l'allacciamento alla rete nazionale del gas.\n\nLa sua composizione segue una logica precisa, stabilita da ARERA (Autorità di Regolazione per Energia Reti e Ambiente):\n\nLe prime 4 cifre identificano il distributore di gas (secondo un codice definito a livello nazionale che include l'identificativo del gestore della rete di trasporto e quello dell'impresa di distribuzione).\n\nLe successive 10 cifre individuano in modo univoco la singola utenza, ovvero il punto di prelievo finale.\n\nQuesto codice è di cruciale importanza per una serie di operazioni contrattuali e tecniche. È indispensabile per:\n\nPassare a Lene: ci permette di identificare con certezza l'utenza da acquisire.\n\nAttivare un nuovo contratto (subentro) o modificare l'intestatario (voltura): è necessario per tutte le pratiche burocratiche legate alla fornitura.\n\nRichiedere interventi tecnici: in caso di guasti o manutenzione, il PDR consente al distributore di localizzare rapidamente il contatore.\n\nAccedere a bonus sociali: viene utilizzato per associare le agevolazioni sulla bolletta all'utenza corretta.\n\nDifferenza tra codice PDR e codice POD\n\nSpesso si genera confusione tra il PDR e il POD. Sebbene entrambi siano codici identificativi legati alle utenze energetiche, la loro funzione è nettamente distinta:\n\nIl PDR (Punto di Riconsegna), come descritto, identifica univocamente un'utenza del gas naturale.\n\nIl POD (Point of Delivery, ovvero Punto di Prelievo) è l'equivalente per l'energia elettrica. Identifica il punto fisico in cui l'elettricità viene prelevata dalla rete e consegnata al cliente finale. È un codice alfanumerico (composto da 14 o 15 caratteri) che inizia sempre con \"IT\" per le utenze italiane.\n\nDove trovare il codice PDR\n\nRecuperare il codice PDR è semplice e fondamentale: è proprio il codice che ti chiediamo per passare a Lene. Può infatti essere trovato sulla bolletta del gas, sul contatore stesso o, eventualmente, contattando il fornitore o il distributore di zona.\n\nPDR sul contatore del gas\n\nOttenere il PDR contatore gas è possibile attraverso un'ispezione fisica del dispositivo, sebbene la procedura per individuarlo vari a seconda del modello installato:\n\nContatori elettronici (Smart Meter): nei modelli di nuova generazione dotati di display digitale, il PDR può essere visualizzato premendo ripetutamente il pulsante di attivazione. Scorrendo tra le varie informazioni disponibili (consumi, codice cliente, etc.), a un certo punto comparirà il codice di 14 cifre.\n\nContatori meccanici: sui modelli più datati, la presenza del PDR non è sempre assicurata. A volte, può trovarsi stampato su un'etichetta adesiva o una targhetta metallica applicata direttamente sul corpo del dispositivo.\n\nPDR nella bolletta del gas\n\nReperire il codice PDR bolletta gas è un'operazione semplice e garantita, in quanto per disposizione di ARERA deve essere obbligatoriamente presente in ogni fattura. Generalmente, si trova nella prima o nella seconda pagina del documento, all'interno di un riquadro informativo denominato \"Dati della fornitura\", \"Dati tecnici\" o diciture simili.\n\nCome ottenere il codice PDR senza avere il contatore a portata di mano\n\nQuando non si ha ancora una bolletta a disposizione o non è possibile consultare direttamente il contatore, come spesso accade entrando in un'abitazione appena acquistata o affittata, è comunque possibile reperire il codice PDR gas senza contatore. Le modalità a cui fare riferimento sono principalmente due:\n\nContattare il fornitore di energia: se l'utenza è attiva, il metodo più rapido è chiamare il servizio clienti della società di vendita con cui è in essere il contratto. Fornendo i dati anagrafici dell'intestatario e l'indirizzo dell'immobile, l'operatore sarà in grado di comunicare il PDR.\n\nRivolgersi al distributore locale: se il contatore è stato disattivato (utenza cessata) e non si conosce quale fosse l'ultimo fornitore, l'unica soluzione è contattare l'impresa di distribuzione che gestisce la rete in quella specifica area geografica. Sarà necessario comunicare l'indirizzo esatto dell'immobile e, se possibile, il numero di matricola leggibile sul contatore. Il distributore, in quanto proprietario della rete e dei contatori, è in possesso dei dati tecnici di tutti i Punti di Riconsegna della sua area di competenza e può fornire il codice PDR corretto.\n\nCome verificare il codice PDR online\n\nCon Lene, puoi accedere in autonomia al tuo codice PDR:\n\no   Accedi alla tua area clienti online o all'app Lene e visualizza i dati della fornitura in tempo reale\n\no   Scarica la bolletta in PDF, dove il PDR è sempre riportato\n\nEsempi pratici di codice PDR\n\nCome già anticipato, la struttura del PDR gas è rigorosamente definita per garantire l'univocità di ogni punto di fornitura. Per visualizzare in modo chiaro questa composizione, è possibile utilizzare una rappresentazione schematica che ne evidenzi le due parti fondamentali.\n\nConsiderando un codice PDR esempio come 01234567890123, la sua struttura può essere così suddivisa:\n\nCodice Distributore - 0123: Identifica il distributore di gas secondo il codice nazionale.\n\nCodice Utenza - 4567890123: Identifica in modo univoco e definitivo il punto di prelievo finale (il contatore del cliente).\n\nFAQ\n\nCosa vuol dire PDR?\n\nPDR è l'acronimo di \"Punto di Riconsegna\". Il codice, composto da 14 cifre, identifica in modo univoco questo punto e quindi l'utenza del gas.\n\nCome recuperare il PDR senza bolletta?\n\nSe non si dispone di una bolletta, è possibile recuperare il codice PDR ispezionando il contatore. Qualora anche questo non fosse possibile, si può contattare il servizio clienti del proprio fornitore se l'utenza è attiva. In caso di utenza disattivata è necessario rivolgersi direttamente al distributore locale.\n\nPosso attivare il gas senza il PDR?\n\nNo, è obbligatorio per attivare una fornitura di gas. Questo codice è l'identificativo indispensabile che permette al nuovo fornitore di individuare l'utenza corretta da attivare o riattivare.",
+      "nome": "Che-cos-è-il-PDR",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Che cos'è il PUN?",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "Attivazione dell'accesso biometrico sull'app Lene",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Cos'è il PUN e perché è importante?\n\nCosa sono le fasce orarie nel mercato elettrico?",
+      "answer": "Il PUN (Prezzo Unico Nazionale) è il prezzo di riferimento dell'energia elettrica all'ingrosso in Italia. Viene calcolato ogni giorno dal GME (Gestore dei Mercati Energetici).\n\nConoscere il PUN è fondamentale perché:\n\no   influenza direttamente il costo dell'energia in bolletta per milioni di famiglie e imprese\n\no   comprendere il suo valore attuale e il suo andamento aiuta a orientarsi tra le diverse offerte dei fornitori\n\no   permette di avere una maggiore consapevolezza dei propri consumi\n\nPUN energia elettrica per fasce orarie (F1, F2, F3)\n\nIl prezzo dell'energia non è costante durante la giornata, ma varia in base a fasce orarie che riflettono i diversi livelli di domanda.\n\nCosa sono le fasce orarie nel mercato elettrico\n\nIl PUN luce viene suddiviso in tre fasce orarie per incentivare i consumi nei periodi di minore richiesta di energia sulla rete nazionale, quando la produzione è generalmente meno costosa. Le fasce sono così definite:\n\nF1 (ore di punta): dal lunedì al venerdì, dalle 8:00 alle 19:00.\n\nF2 (ore intermedie): dal lunedì al venerdì dalle 7:00 alle 8:00 e dalle 19:00 alle 23:00, e il sabato dalle 7:00 alle 23:00.\n\nF3 (ore fuori punta): dal lunedì al sabato dalle 23:00 alle 7:00, e tutte le ore della domenica e dei giorni festivi.",
+      "nome": "Che-cos-è-il-PUN",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Per quanto tenere le bollette luce e gas? Cosa dice la legge",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Bollette luce e gas: quanto tempo è obbligatorio conservarle?",
+      "answer": "Le bollette di luce e gas sono documenti importanti non solo per tenere traccia dei consumi, ma anche come prova in caso di contestazioni o problemi con il fornitore. Ma quanto tempo è obbligatorio conservarle? In questo articolo, esploreremo cosa dice la legge e come organizzare correttamente la conservazione delle tue bollette.\n\nBollette luce e gas: quanto tempo è obbligatorio conservarle\n\nSecondo la normativa italiana è obbligatorio conservare le bollette di luce e gas per un determinato periodo, utile in caso di contestazioni, errori di fatturazione o rimborsi da parte del fornitore.\n\nLa regola generale: conservare le bollette per 5 anni\n\nSecondo la normativa fiscale italiana, le bollette di luce e gas devono essere conservate per un periodo minimo di 5 anni. Questo vale sia per i consumi domestici che aziendali.\n\nIl ruolo delle bollette come prova in caso di contestazioni\n\nLe bollette servono anche come documentazione in caso di contestazioni o richieste di rimborso. Se hai dubbi sui consumi o se ritieni che un addebito sia errato, avere le bollette precedenti è fondamentale per dimostrare la correttezza delle tue informazioni e risolvere la disputa.\n\nBollette già pagate: devo conservarle comunque?\n\nSi, anche se hai già pagato una bolletta va conservata per 5 anni. Questo perché:\n\no   sono la prova di avvenuto pagamento in caso di contestazioni\n\no   servono per ricalcoli o per ottenere eventuali rimborsi del fornitore commette un errore\n\nPrescrizione bollette: novità ARERA\n\nDal 2023 l'ARERA (Autorità di Regolazione per Energia Reti e Ambiente) ha introdotto un'importante novità: la prescrizione delle bollette non pagate si riduce da 5 a 2 anni.\n\nCosa significa per te:\n\no   Se il fornitore non richiede il pagamento entro 2 anni dall'emissione della bolletta, il credito va in prescrizione e non può più essere richiesto.\n\no   Questa regola si applica sia alle forniture di energia elettrica che di gas naturale.\n\nLa riduzione a 2 anni vale solo per i crediti insoluti (bollette non pagate).\n\nPer le bollette già saldate, resta valido l'obbligo di conservarle per 5 anni, così da avere la prova di pagamento in caso di contestazioni o rimborsi.",
+      "nome": "Per-quanto-tenere-le-bollette-luce-e-gas-Cosa-dice-la-legge",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Differenza bollette tra residente e non residente: cosa cambia davvero",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      "question": "Cosa significa essere \"residente\" o \"non residente\" per le forniture di energia?",
+      "answer": "Quando si tratta di forniture di energia, la differenza tra residente e non residente può influire significativamente sui costi delle bollette di luce e gas. In questo articolo vedremo cosa cambia nelle tariffe e nelle agevolazioni a seconda che tu sia un cliente residente o non residente.\n\nCosa significa essere \"residente\" o \"non residente\" per le forniture di energia\n\nLa distinzione tra residente e non residente è legata alla tipologia di contratto e all'uso della casa per la quale richiedi la fornitura di energia.\n\nBolletta da residente: a chi si applica\n\nLa bolletta da residente si applica a chi vive stabilmente nell'abitazione, con residenza anagrafica. Il residente ha diritto a tariffe agevolate per il gas e l'energia elettrica, nonché a bonus sociali previsti per chi ha una situazione economica più fragile.\n\nBolletta da non residente: quando si applica\n\nLa bolletta da non residente è applicata a chi non ha la residenza nell'abitazione, ma la utilizza come seconda casa, o per brevi periodi (ad esempio, una casa vacanza). In questo caso, i costi fissi sono più elevati e non sono disponibili alcune agevolazioni fiscali.",
+      "nome": "Differenza-bollette-tra-residente-e-non-residente-cosa-cambia-davvero",
+      "url": "",
+      "keywords": ""
+    },
+    {
+      "titolo": "Come leggere la bolletta della luce: guida semplice",
+      "stato_pubblicazione": "Pubblicato",
+      "riepilogo": "",
+      "audience": "AgentForce",
+      "type": "",
+      Question
+Come leggere e capire la bolletta della luce Lene? Da cosa è composta la spesa in bolletta? Cosa significano le voci della bolletta? Perché pago di più, cosa sono i ricalcoli e i conguagli? Cos'è il CdispD e il Prezzo Luce? Perché sono cambiate le voci della bolletta (Delibera ARERA 386/2025)? 
+
+Come si legge la bolletta della luce? Dove trovo POD, totale, scadenza, consumi, le voci di costo, i ricalcoli, accise e IVA, il canone RAI?
+Answer
+# Come leggere la bolletta della luce: guida semplice
+
+## La bolletta in breve
+
+La bolletta Lene segue il formato semplificato introdotto da ARERA da luglio 2025 ed è organizzata così: la **pagina 1** è la copertina con la sintesi (quanto paghi, entro quando, come paghi); la **pagina 2** contiene i dati tecnici della fornitura (POD, potenza) e lo **Scontrino dell'energia**, la tabella che mostra da cosa è composta la spesa, più il box con la tua tariffa; le **pagine 3–5** spiegano consumi e letture, ricalcoli/conguagli e imposte; le **pagine 6–7** contengono comunicazioni istituzionali e di ARERA; le **pagine 8–10** sono il dettaglio analitico voce per voce; le ultime pagine riportano l'avviso di pagamento PagoPA. Su **ogni pagina** trovi in alto la banda "BOLLETTA LUCE — Codice cliente" e in basso i dati societari di Lene S.r.l. Tutti i valori (importi, prezzi, consumi, date, codici) cambiano da cliente a cliente e si leggono solo sulla propria bolletta.
+
+## Dove trovo…? (indice rapido)
+
+| Cosa cerchi | Dove si trova |
+|---|---|
+| Totale da pagare e scadenza | Pagina 1, box giallo a sinistra |
+| Codice cliente | Banda in alto di ogni pagina |
+| Intestatario, codice fiscale | Pagina 1, colonna destra (Anagrafica) |
+| Consumo annuo e consumo fatturato | Pagina 1 (sintesi); dettaglio a pagina 3 |
+| Nome offerta e scadenza offerta | Pagina 1 ("La tua fornitura") e pagina 2 (box offerta) |
+| Contatti servizio clienti / numero emergenze | Pagina 1, colonna destra |
+| **Codice POD** | Pagina 2, box "Indirizzo fornitura" |
+| Indirizzo di fornitura, potenza impegnata | Pagina 2, box "Indirizzo fornitura" |
+| Composizione della spesa (quota consumi, quota fissa, quota potenza, ricalcoli, accise e IVA) | Pagina 2, "Scontrino dell'energia" |
+| Prezzo al kWh, tipo prezzo (fisso/variabile), fasce | Pagina 2, box offerta "Le informazioni sulla tua tariffa" |
+| Letture e autolettura | Pagina 3 |
+| Consumi per fascia F1/F2/F3 e storico 18 mesi | Pagina 3 |
+| Ricalcoli e conguagli | Pagina 4 |
+| Oneri di sistema ASOS e ARIM | Pagina 4 |
+| Accise, IVA, pagamenti in ritardo e mora | Pagina 5 |
+| Mix energetico, dati catastali, canone RAI | Pagina 6 |
+| Maggior tutela e bonus sociale | Pagina 7 |
+| Dettaglio analitico (CdispD, perdite di rete, UC3, UC6, trasporto) | Pagine 8–10 |
+| Codici per pagare (PagoPA, CBILL, QR) | Pagina 11 |
+
+---
+
+## PAGINA 1 — Copertina: quanto pago, entro quando, come pago
+*Risponde a: quanto devo pagare? entro quando? come pago? che offerta ho? qual è il mio codice cliente? chi chiamo per un guasto?*
+
+La prima pagina è organizzata in due colonne.
+
+**Colonna sinistra (box giallo):** saluto e mese di emissione; **Totale bolletta** e **Totale da pagare** in cifre grandi; **scadenza** del pagamento ("entro il …"); **consumo fatturato** del periodo in kWh; **QR Code PagoPA** (se compare "PagoPA" pur avendo la domiciliazione, la banca non ha ancora confermato l'addebito per quel ciclo); box **"Dati di fatturazione e pagamento"**: data fattura, numero fattura elettronica, metodo di pagamento, periodo di riferimento e situazione pagamenti (es. Regolare).
+
+**Colonna destra (box bianchi):** **Anagrafica** (intestatario, indirizzo di spedizione, codice fiscale, codice cliente); **Consumo annuo** (kWh/anno, da inizio fornitura a fine periodo fatturato); **"La tua fornitura"** (tipo, mercato, nome offerta, scadenza offerta); **Contattaci** (canali del Servizio Clienti Lene); **Emergenze**: il numero guasti indicato **non è di Lene** — guasti, interruzioni e pericoli sono di competenza del **distributore locale**.
+
+> **Differenza utile:** la *bolletta* è il documento completo; lo *scontrino dell'energia* (pagina 2) è il riepilogo sintetico per controllare al volo importi e consumi.
+
+## PAGINA 2 — POD, Scontrino dell'energia e tariffa
+*Risponde a: dove trovo il POD? da cosa è composta la spesa? che prezzo pago al kWh? ho un prezzo fisso o variabile? quali sono le spese commerciali?*
+
+**Box "Indirizzo fornitura":** l'**indirizzo di fornitura** (dove sta fisicamente il contatore: può differire dall'indirizzo di spedizione, tipico delle seconde case); il **Codice POD** (identifica il punto di prelievo, inizia con "IT", non cambia cambiando fornitore — per struttura ed esempi vedi l'articolo dedicato al codice POD); la **potenza impegnata** (kW; valore domestico standard: 3 kW).
+
+**Scontrino dell'energia** — è una **tabella** (Quantità · Prezzo medio · Importo). Ogni macro-voce è scomposta in "di cui vendita" e "di cui rete e oneri":
+
+| Voce | Cosa rappresenta |
+|---|---|
+| **Quota per consumi** | parte proporzionale ai kWh usati |
+| → di cui vendita energia | quota che va al fornitore |
+| → di cui rete e oneri di sistema | quota regolata da ARERA, uguale per tutti |
+| **Quota fissa** | costo a giorno indipendente dai consumi |
+| **Quota potenza** | costo legato ai kW impegnati |
+| **Totale ricalcoli** | effetto netto dei conguagli di periodi precedenti (dettaglio a pag. 4) |
+| **Accise e IVA** | imposte |
+| **Totale bolletta / da pagare** | somma finale |
+
+La spesa per la **vendita** è quella su cui il fornitore compete; la spesa per **rete e oneri di sistema** è definita da ARERA in modo uniforme.
+
+**Box offerta "Le informazioni sulla tua tariffa":** nome offerta; tipologia di prezzo (Monorario / Biorario / Multiorario); tipologia offerta (Prezzo Fisso / Prezzo Variabile, es. indicizzato al PUN); codice offerta; decorrenza e scadenza delle condizioni economiche; penali di recesso; scadenza contratto.
+
+**Prezzo della quota consumi (perdite incluse), come stampato in bolletta:** `Prezzo comprensivo di perdite (€/kWh) = Prezzo Luce + CdispD`, dove **Prezzo Luce** è il prezzo sottoscritto con il contratto e **CdispD** è il corrispettivo di dispacciamento definito da ARERA. Il "prezzo medio" in tabella è un valore di sintesi; i prezzi unitari precisi sono negli Elementi di dettaglio (pagg. 8–10).
+
+## PAGINA 3 — Letture, consumi e fasce orarie
+*Risponde a: come sono stati calcolati i miei consumi? cosa sono F1, F2, F3? la lettura è reale o stimata? come faccio l'autolettura? quanto ho consumato nei mesi scorsi?*
+
+**Caratteristiche tecniche:** tipologia cliente (Domestico residente / non residente) e tensione (es. Bassa Tensione Monofase 220V).
+
+**Tabella Letture** (Data · F1 · F2 · F3 · Tipologia): i valori del contatore per fascia. **Lettura rilevata** = dato reale dal distributore; **lettura stimata** = valore statistico quando manca il dato reale.
+
+**Autolettura.** Con contatore elettronico la lettura è automatica. In assenza di letture reali da almeno due mesi si può comunicare l'autolettura **tra il 22 del mese e il 2 del successivo**, contattando il Servizio Clienti.
+
+**Tabella Consumi** (Periodo · F1 · F2 · F3 · Tipologia): **consumo effettivo** = differenza tra lettura finale e iniziale; **consumo fatturato** = quantità addebitata.
+
+**Informazioni storiche:** griglia con i kWh per fascia, mese per mese, sugli **ultimi 18 mesi**, più spesa annua e consumo da inizio fornitura.
+
+**Fasce orarie:** **F1** (punta: giorni feriali di giorno), **F2** (intermedia), **F3** (fuori punta: notte/domenica/festivi). Con offerta **monoraria** il prezzo è unico e le fasce sono solo informative. Per gli orari esatti vedi l'articolo dedicato al **PUN e alle fasce orarie**.
+
+## PAGINA 4 — Ricalcoli, conguagli e oneri di sistema
+*Risponde a: perché questa bolletta è più alta? cos'è un conguaglio? cosa sono ASOS e ARIM? sto pagando due volte lo stesso periodo?*
+
+**Grafico "Potenza mensile prelevata" (kW):** i picchi di potenza per fascia, utili a verificare di non avvicinarsi al limite della potenza impegnata. Può risultare "–" se il dato non è disponibile.
+
+**Tabella "Ricalcoli consumi"** (Periodo · Consumo attuale · Consumo precedente · Importo attuale · Importo precedente). Un ricalcolo avviene quando un mese fatturato a **stima** viene rifatturato alla **lettura reale**: la differenza è il **conguaglio**, che compare nello Scontrino come "Totale ricalcoli". La bolletta annulla il vecchio addebito e riaddebita il corretto (lo storno appare come "Restituzione importi fatturati", valori negativi): **non si paga due volte lo stesso mese**.
+
+**Tabella "Oneri generali di sistema":** **ASOS** (sostegno alle rinnovabili e cogenerazione) e **ARIM** (altri oneri di interesse generale). Sono costi ARERA uguali per tutti i fornitori, con parte fissa e a consumo; la **parte fissa non si applica alle abitazioni di residenza anagrafica**.
+
+## PAGINA 5 — Imposte, IVA e pagamenti
+*Risponde a: quanta IVA pago? cosa succede se pago in ritardo? posso cambiare metodo di pagamento?*
+
+**Imposte:** l'**accisa** (imposta erariale) sui kWh consumati; per i domestici **residenti** sono previste agevolazioni sulla prima casa.
+
+**IVA:** **10%** usi domestici; **22%** usi non domestici/altri usi (incluse molte seconde case).
+
+**Pagamenti:** scelta tra **addebito diretto** (domiciliazione) e **PagoPA**, modificabile in qualsiasi momento. La bolletta indica anche se i pagamenti risultano regolari. Per smart bill e fatturazione vedi l'articolo dedicato a **fatturazione e pagamenti**.
+
+**Pagamento oltre la scadenza**, in ordine: costi di sollecito da contratto; **interessi di mora** (Tasso BCE + 3,5 punti, dopo 15 giorni); costituzione in mora via PEC/raccomandata; possibile **sospensione** della fornitura; costi di sospensione e riallaccio del distributore (regolati da ARERA). Se l'utente lamenta una bolletta calcolata male o vuole rateizzare, la gestione passa a un operatore.
+
+## PAGINA 6 — Mix energetico e comunicazioni istituzionali
+*Risponde a: la mia energia è verde? cosa sono i dati catastali? come pago il canone RAI? cos'è il piano PESSE?*
+
+**Mix energetico (Decreto MASE 224/2023):** confronto tra mix **per contratto**, **nazionale** e dell'energia **venduta**. Un mix per contratto **100% rinnovabile** significa energia venduta come verde, ma **non esenta da oneri di sistema e imposte**.
+
+**Altre informazioni:** fatturazione elettronica (originale nell'area riservata dell'Agenzia delle Entrate); reclami (sito lene.it o email; modulo PDF per il reclamo formale); **piano PESSE** di Terna (anti-blackout, riduzioni a turni max un'ora e mezza al giorno, non dipende da Lene); aggiornamenti dei corrispettivi decisi dall'Autorità; **dati catastali** obbligatori (circolare AdE 44/2005); **canone RAI**: per il domestico residente è addebitato in bolletta in **10 rate mensili**, voce separata dai costi energetici; per guasti e pericoli si contatta il **distributore locale**, non Lene.
+
+## PAGINA 7 — Comunicazioni ARERA: maggior tutela e bonus sociale
+*Risponde a: ho diritto al bonus sociale? posso tornare in maggior tutela?*
+
+**Maggior tutela:** disponibile **solo per i clienti "vulnerabili"** (disagio economico, disabilità L.104, salvavita, over 75, isole minori). Info: arera.it/consumatori o **800.166.654**.
+
+**Bonus sociale:** sconto in bolletta per chi rientra nelle soglie ISEE. **Non serve fare domanda:** basta presentare ogni anno la DSU e ottenere l'attestazione ISEE; il bonus è applicato **automaticamente**.
+
+## PAGINE 8–10 — Elementi di dettaglio (quadro analitico)
+*Risponde a: cos'è il CdispD? cosa sono le perdite di rete? cosa sono UC3 e UC6? voglio il dettaglio al centesimo.*
+
+Dettaglio analitico voce per voce, scomposizione di ogni macro-voce dello scontrino. Intestazione: POD + periodo; colonne: Quantità · Corrispettivo unitario · Imponibile · Cod. IVA. Quattro blocchi: **Spesa per la vendita**, **Spesa per l'uso della rete (trasporto)**, **Oneri generali di sistema**, **Imposte**.
+
+Micro-voci: **Prezzo Luce** (componente energia da contratto); **CdispD** (dispacciamento, ARERA); **perdite di rete** (maggiorazione forfettaria ~10% in bassa tensione); **corrispettivo mercato capacità**; **componente DispBT**; **trasporto** (quota energia/fissa/potenza); **UC3** (perequazione trasporto); **UC6** (qualità del servizio); **Restituzione importi fatturati** (storni, valori negativi, **non** rimborsi in denaro). La pagina 10 riporta il **Riepilogo IVA** e il Totale.
+
+## PAGINA 11 — Avviso di pagamento (PagoPA)
+*Risponde a: dove sono i codici per pagare? cos'è il codice CBILL? dove pago questa bolletta?*
+
+L'avviso PagoPA riporta: **Ente creditore** (Lene S.r.l.), destinatario, importo e scadenza, **Cod. CBILL** (identifica Lene nei sistemi interbancari) e **Cod. Avviso** (identifica la specifica fattura). Si paga col **QR Code** da app di pagamento/home banking, oppure presso banche, ATM, uffici postali ed esercenti convenzionati.
+
+## PAGINA 12 — Delibera ARERA 386/2025: voci nuove, spesa invariata
+*Risponde a: perché le voci della bolletta sono cambiate? è aumentato il prezzo?*
+
+Per la **Delibera 386/2025/R/COM** alcune componenti sono state **raggruppate** in voci più semplici, **senza variare la spesa annua stimata**: Componente energia + sbilanciamento → **Prezzo Luce**; CCV + dispacciamento fisso → **Spese commerciali**; dispacciamento variabile + capacità → **CdispD**. È una riorganizzazione grafica, **non** un aumento né una modifica del contratto.
+Nome URL
+Come-leggere-la-bolletta-della-luce-guida-semplice,
+      "url": "",
+      "keywords": ""
+    }
+  ]
+}
+
+      
