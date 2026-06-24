@@ -1,0 +1,477 @@
+import { useState } from "react";
+
+const sections = [
+{ id: "asis", label: "Situazione Attuale" },
+{ id: "obiettivo", label: "Obiettivo" },
+{ id: "architettura", label: "Architettura To-Be" },
+{ id: "flussi", label: "Flussi Dettagliati" },
+{ id: "soluzioni", label: "Soluzioni a Confronto" },
+{ id: "roadmap", label: "Roadmap & Next Steps" },
+];
+
+const Tag = ({ children, color = "orange" }) => {
+const colors = {
+orange: { bg: "#FFF3E0", text: "#E65100", border: "#FFB74D" },
+navy: { bg: "#E8EAF6", text: "#1A237E", border: "#7986CB" },
+green: { bg: "#E8F5E9", text: "#1B5E20", border: "#66BB6A" },
+red: { bg: "#FFEBEE", text: "#B71C1C", border: "#EF9A9A" },
+};
+const c = colors[color];
+return (
+<span style={{
+background: c.bg, color: c.text, border: `1px solid ${c.border}`,
+borderRadius: 20, padding: "2px 12px", fontSize: 12, fontWeight: 700,
+display: "inline-block", marginBottom: 6
+}}>{children}</span>
+);
+};
+
+const Card = ({ title, tag, tagColor, children, accent }) => (
+<div style={{
+background: "#fff",
+border: `1px solid #E8EAF6`,
+borderLeft: `4px solid ${accent || "#E87722"}`,
+borderRadius: 10,
+padding: "20px 22px",
+marginBottom: 16,
+boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+}}>
+{tag && <Tag color={tagColor}>{tag}</Tag>}
+{title && <h3 style={{ margin: "6px 0 10px", fontSize: 17, color: "#1A1F3C", fontWeight: 700 }}>{title}</h3>}
+{children}
+</div>
+);
+
+const FlowStep = ({ number, title, description }) => (
+<div style={{ display: "flex", gap: 14, marginBottom: 14, alignItems: "flex-start" }}>
+<div style={{
+minWidth: 32, height: 32, borderRadius: "50%",
+background: "#E87722", color: "#fff", fontWeight: 800,
+display: "flex", alignItems: "center", justifyContent: "center",
+fontSize: 14, flexShrink: 0
+}}>{number}</div>
+<div>
+<strong style={{ color: "#1A1F3C", fontSize: 14 }}>{title}</strong>
+<p style={{ margin: "2px 0 0", color: "#555", fontSize: 13, lineHeight: 1.5 }}>{description}</p>
+</div>
+</div>
+);
+
+const ProCon = ({ pros, cons, title, recommended }) => (
+<div style={{
+border: `2px solid ${recommended ? "#E87722" : "#C5CAE9"}`,
+borderRadius: 12, overflow: "hidden", flex: 1
+}}>
+<div style={{
+background: recommended ? "#E87722" : "#3F51B5",
+padding: "12px 18px", display: "flex", justifyContent: "space-between", alignItems: "center"
+}}>
+<span style={{ color: "#fff", fontWeight: 700, fontSize: 15 }}>{title}</span>
+{recommended && <span style={{ background: "#fff", color: "#E87722", fontSize: 11, fontWeight: 800, padding: "2px 8px", borderRadius: 20 }}>CONSIGLIATA</span>}
+</div>
+<div style={{ padding: 18 }}>
+<p style={{ fontWeight: 700, color: "#2E7D32", fontSize: 13, margin: "0 0 6px" }}>✅ PRO</p>
+{pros.map((p, i) => <p key={i} style={{ margin: "0 0 5px", color: "#333", fontSize: 13 }}>• {p}</p>)}
+<p style={{ fontWeight: 700, color: "#C62828", fontSize: 13, margin: "14px 0 6px" }}>❌ CONTRO</p>
+{cons.map((c, i) => <p key={i} style={{ margin: "0 0 5px", color: "#333", fontSize: 13 }}>• {c}</p>)}
+</div>
+</div>
+);
+
+const ComponentBadge = ({ label, sub }) => (
+<div style={{
+background: "linear-gradient(135deg, #1A1F3C 0%, #2d3561 100%)",
+borderRadius: 10, padding: "12px 16px", color: "#fff", textAlign: "center"
+}}>
+<div style={{ fontSize: 13, fontWeight: 700 }}>{label}</div>
+{sub && <div style={{ fontSize: 11, color: "#B0BEC5", marginTop: 4 }}>{sub}</div>}
+</div>
+);
+
+export default function App() {
+const [active, setActive] = useState("asis");
+
+return (
+<div style={{ fontFamily: "'Segoe UI', sans-serif", background: "#F5F6FA", minHeight: "100vh" }}>
+{/* Header */}
+<div style={{
+background: "linear-gradient(135deg, #1A1F3C 0%, #2d3561 100%)",
+padding: "28px 32px 20px", color: "#fff"
+}}>
+<div style={{ display: "flex", alignItems: "center", gap: 14, marginBottom: 6 }}>
+<div style={{
+width: 44, height: 44, borderRadius: 10,
+background: "#E87722", display: "flex", alignItems: "center", justifyContent: "center",
+fontSize: 22
+}}>🤖</div>
+<div>
+<div style={{ fontSize: 11, color: "#90CAF9", fontWeight: 600, letterSpacing: 2, textTransform: "uppercase" }}>Lene · Proposta Tecnica</div>
+<h1 style={{ margin: 0, fontSize: 22, fontWeight: 800 }}>AI Agent per il Logging MuleSoft</h1>
+</div>
+</div>
+<p style={{ color: "#B0BEC5", margin: "8px 0 0", fontSize: 14 }}>
+Monitoraggio intelligente tramite LLM + Elastic + MCP — dalla consultazione manuale all'analisi automatizzata H24
+</p>
+</div>
+
+{/* Nav */}
+<div style={{
+background: "#fff", borderBottom: "2px solid #E8EAF6",
+display: "flex", overflowX: "auto", gap: 0
+}}>
+{sections.map(s => (
+<button key={s.id} onClick={() => setActive(s.id)} style={{
+padding: "13px 20px", border: "none", background: "none", cursor: "pointer",
+fontWeight: active === s.id ? 700 : 500,
+color: active === s.id ? "#E87722" : "#555",
+borderBottom: active === s.id ? "3px solid #E87722" : "3px solid transparent",
+fontSize: 13, whiteSpace: "nowrap", transition: "all 0.2s"
+}}>{s.label}</button>
+))}
+</div>
+
+{/* Content */}
+<div style={{ maxWidth: 860, margin: "0 auto", padding: "28px 20px" }}>
+
+{/* === SITUAZIONE ATTUALE === */}
+{active === "asis" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>📊 Situazione Attuale (AS-IS)</h2>
+<p style={{ color: "#555", marginBottom: 20 }}>
+L'attuale strategia di logging si basa su <strong>Anypoint Platform con licenza Titanium</strong>.
+Pur disponendo di strumenti avanzati, la gestione rimane in gran parte manuale, con limitata automazione nell'analisi e nel reporting.
+</p>
+
+<Card title="Anypoint Monitoring" tag="Strumento Principale" tagColor="navy" accent="#3F51B5">
+<p style={{ color: "#444", fontSize: 14, lineHeight: 1.6, margin: 0 }}>
+Dashboard complete con flow/connector charts, API Visualizer e data retention estesa a <strong>90 giorni</strong>.
+Tuttavia, per analisi, correlazione dei log e troubleshooting, è necessario <strong>navigare manualmente</strong> tra i vari strumenti — senza una visione unificata automatizzata.
+</p>
+</Card>
+
+<Card title="Alert MuleSoft" tag="Notifiche Automatiche" tagColor="orange" accent="#E87722">
+<p style={{ color: "#444", fontSize: 14, lineHeight: 1.6, margin: 0 }}>
+Circa <strong>100 alert automatici via email</strong> per 25 applicazioni monitorate, attivi sia per numero di errori che per response time, a livello di warning e critical.
+Gli alert arrivano ma richiedono poi analisi manuale.
+</p>
+</Card>
+
+<Card title="Mail di Monitoring" tag="Processo Manuale" tagColor="red" accent="#E53935">
+<p style={{ color: "#444", fontSize: 14, lineHeight: 1.6, margin: 0 }}>
+Ogni due settimane vengono composte <strong>manualmente</strong> email di monitoraggio su error rate e response time, utilizzando report e dashboard di Anypoint Platform.
+Questo processo è time-consuming e non scalabile.
+</p>
+</Card>
+
+<div style={{
+background: "#FFF3E0", border: "1px solid #FFB74D", borderRadius: 10, padding: 18, marginTop: 10
+}}>
+<p style={{ margin: 0, fontWeight: 700, color: "#E65100", marginBottom: 8 }}>⚠️ Limiti della situazione attuale</p>
+<p style={{ margin: "4px 0", fontSize: 14, color: "#555" }}>• Nessuna analisi automatica del contenuto dei log</p>
+<p style={{ margin: "4px 0", fontSize: 14, color: "#555" }}>• Report manuali bisettimanali, non in real-time</p>
+<p style={{ margin: "4px 0", fontSize: 14, color: "#555" }}>• Necessità di navigare manualmente tra più strumenti per correlare i log</p>
+<p style={{ margin: "4px 0", fontSize: 14, color: "#555" }}>• Nessun supporto conversazionale per interrogare lo stato delle applicazioni</p>
+</div>
+</div>
+)}
+
+{/* === OBIETTIVO === */}
+{active === "obiettivo" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>🎯 Obiettivo della Proposta</h2>
+<p style={{ color: "#555", marginBottom: 20 }}>
+Introdurre un <strong>Agente AI contestualizzato</strong> capace di gestire e orchestrare i log MuleSoft in autonomia, affiancando (non sostituendo) la consultazione manuale con tre modalità operative.
+</p>
+
+{[
+{
+num: "1",
+icon: "⏱️",
+title: "Avvio Analisi da Batch",
+desc: "L'agente si attiva automaticamente a cadenza parametrizzabile (es. ogni giorno). Analizza i nuovi log rispetto all'ultima esecuzione, produce un report e lo invia via email in modo completamente automatico. Zero intervento umano.",
+features: ["Cadenza parametrizzabile", "Confronto incrementale con esecuzione precedente", "Report via email automatico", "Gestione fully automated"],
+color: "#3F51B5"
+},
+{
+num: "2",
+icon: "💬",
+title: "Richiesta Analisi via Chat (Slack)",
+desc: "Gli operatori possono interrogare l'agente direttamente via Slack in linguaggio naturale. L'agente risponde in tempo reale con analisi puntuali su errori, flussi o stato delle applicazioni.",
+features: ["Disponibile H24/7", "Analisi su domanda specifica", "Risposta in tempo reale via chat", "Comprensione del contesto grazie alla Knowledge Base"],
+color: "#E87722"
+},
+{
+num: "3",
+icon: "🔍",
+title: "Consultazione Manuale",
+desc: "Come oggi, i log restano consultabili manualmente tramite gli strumenti esistenti (Anypoint, Elastic). Questa modalità rimane disponibile come fallback e per analisi tecniche approfondite.",
+features: ["Accesso diretto ai log su Elastic", "Nessun cambiamento agli strumenti attuali"],
+color: "#78909C"
+}
+].map(item => (
+<div key={item.num} style={{
+background: "#fff", border: `1px solid #E8EAF6`,
+borderLeft: `5px solid ${item.color}`,
+borderRadius: 10, padding: "20px 22px", marginBottom: 16,
+boxShadow: "0 2px 8px rgba(0,0,0,0.05)"
+}}>
+<div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 10 }}>
+<span style={{ fontSize: 26 }}>{item.icon}</span>
+<div>
+<div style={{ fontSize: 11, color: item.color, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1 }}>Modalità {item.num}</div>
+<h3 style={{ margin: 0, fontSize: 17, color: "#1A1F3C" }}>{item.title}</h3>
+</div>
+</div>
+<p style={{ color: "#444", fontSize: 14, lineHeight: 1.6, margin: "0 0 12px" }}>{item.desc}</p>
+<div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+{item.features.map((f, i) => (
+<span key={i} style={{
+background: "#F5F6FA", color: "#444", border: "1px solid #E0E0E0",
+borderRadius: 20, padding: "3px 12px", fontSize: 12
+}}>✓ {f}</span>
+))}
+</div>
+</div>
+))}
+</div>
+)}
+
+{/* === ARCHITETTURA === */}
+{active === "architettura" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>🏗️ Architettura To-Be</h2>
+<p style={{ color: "#555", marginBottom: 20 }}>
+La soluzione introduce un layer di intelligenza artificiale tra MuleSoft e gli operatori, con Elastic come store centralizzato dei log e Slack come interfaccia conversazionale.
+</p>
+
+{/* Data flow */}
+<div style={{ background: "#fff", borderRadius: 12, padding: 20, marginBottom: 20, border: "1px solid #E8EAF6" }}>
+<p style={{ fontWeight: 700, color: "#1A1F3C", marginTop: 0, fontSize: 15 }}>Flusso Dati ad Alto Livello</p>
+<div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+{[
+{ label: "MuleSoft", sub: "Genera i log", bg: "#E87722" },
+{ label: "→", bg: "transparent", sub: "" },
+{ label: "Elastic", sub: "Archivia i log", bg: "#005571" },
+{ label: "→", bg: "transparent", sub: "" },
+{ label: "Agente IA", sub: "Analizza e risponde", bg: "#1A1F3C" },
+{ label: "→", bg: "transparent", sub: "" },
+{ label: "Slack", sub: "Interfaccia utente", bg: "#4A154B" },
+].map((item, i) => (
+item.label === "→" ? (
+<div key={i} style={{ fontSize: 24, color: "#B0BEC5" }}>→</div>
+) : (
+<div key={i} style={{
+background: item.bg, borderRadius: 10, padding: "10px 16px",
+color: "#fff", textAlign: "center", flex: "0 0 auto"
+}}>
+<div style={{ fontSize: 13, fontWeight: 700 }}>{item.label}</div>
+<div style={{ fontSize: 11, opacity: 0.8 }}>{item.sub}</div>
+</div>
+)
+))}
+</div>
+</div>
+
+{/* Componenti */}
+<h3 style={{ color: "#1A1F3C" }}>Componenti Architetturali</h3>
+{[
+{ icon: "🔌", title: "MCP Servers", color: "#3F51B5", desc: "Consentono all'agente di connettersi autonomamente a servizi esterni. I server previsti sono:", items: ["Elastic MCP – recupera i log da fornire all'agente", "Email MCP (possibile evolutiva) – invia i report via mail", "Confluence MCP (possibile evolutiva) – aggiorna automaticamente la Knowledge Base"] },
+{ icon: "🤖", title: "Layer Agentico (su MuleSoft)", color: "#E87722", desc: "Il cuore della soluzione. L'agente viene implementato su MuleSoft e orchestra tutte le operazioni. Può essere attivato da batch schedulato o da messaggi Slack via protocollo A2A.", items: ["Componente AGENTE – motore principale", "Componente BATCH – trigger schedulato", "Componente A2A (Slack) – interfaccia conversazionale"] },
+{ icon: "🌐", title: "Omnigateway", color: "#00897B", desc: "Orchestratore che gestisce le connessioni tra l'agente e i vari MCP tools, indipendentemente da dove siano deployati. Unifica la gestione degli skill dell'agente.", items: [] },
+{ icon: "🧠", title: "LLM (Large Language Model)", color: "#7B1FA2", desc: "Il modello linguistico che permette all'agente di comprendere i log, analizzarne il contenuto e generare risposte in linguaggio naturale. Deployato su AWS.", items: [] },
+{ icon: "📚", title: "Knowledge Base (RAG)", color: "#1565C0", desc: "Archivio di informazioni contestuali sui flussi MuleSoft, accessibile dall'LLM via RAG (Retrieval Augmented Generation). Consente all'agente di comprendere il contesto applicativo senza supporto umano in tempo reale.", items: [] },
+{ icon: "💬", title: "Server Chatbot", color: "#558B2F", desc: "Server che gestisce la comunicazione via Slack, traducendo i messaggi dell'operatore in richieste verso l'agente e viceversa tramite protocollo A2A.", items: [] },
+].map((c, i) => (
+<div key={i} style={{
+background: "#fff", border: "1px solid #E8EAF6",
+borderLeft: `4px solid ${c.color}`,
+borderRadius: 10, padding: "16px 20px", marginBottom: 14,
+boxShadow: "0 2px 6px rgba(0,0,0,0.04)"
+}}>
+<div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
+<span style={{ fontSize: 20 }}>{c.icon}</span>
+<strong style={{ color: "#1A1F3C", fontSize: 15 }}>{c.title}</strong>
+</div>
+<p style={{ color: "#555", fontSize: 13, margin: "0 0 8px", lineHeight: 1.6 }}>{c.desc}</p>
+{c.items.map((it, j) => <p key={j} style={{ margin: "3px 0", fontSize: 13, color: "#444" }}>• {it}</p>)}
+</div>
+))}
+</div>
+)}
+
+{/* === FLUSSI === */}
+{active === "flussi" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>🔄 Flussi Operativi Dettagliati</h2>
+
+<div style={{ marginBottom: 28 }}>
+<div style={{
+background: "linear-gradient(135deg, #E87722, #F5A623)",
+borderRadius: 10, padding: "14px 20px", marginBottom: 16, color: "#fff"
+}}>
+<strong style={{ fontSize: 16 }}>⏱️ Flusso 1 — Batch (Analisi Schedulata)</strong>
+<p style={{ margin: "4px 0 0", fontSize: 13, opacity: 0.9 }}>
+Attivato automaticamente a cadenza definita (es. ogni giorno). Produce un report e lo invia via email.
+</p>
+</div>
+<div style={{ background: "#fff", borderRadius: 10, padding: 20, border: "1px solid #E8EAF6" }}>
+<FlowStep number="1" title="Trigger batch → MCP Call" description="L'agente viene attivato automaticamente dal batch e chiama l'MCP Elastic per recuperare i log dell'intervallo temporale da analizzare." />
+<FlowStep number="2" title="MCP → Query su Elastic" description="L'MCP esegue una query su Elastic e recupera tutti i log del range temporale richiesto." />
+<FlowStep number="3" title="MCP → Agente (log restituiti)" description="I log recuperati vengono passati dall'MCP all'agente." />
+<FlowStep number="4" title="Agente → LLM (log forniti)" description="L'agente fornisce i log all'LLM per l'analisi del contenuto." />
+<FlowStep number="5" title="LLM → Knowledge Base (contestualizzazione)" description="L'LLM accede alla Knowledge Base tramite RAG per comprendere il contesto dei flussi e delle applicazioni MuleSoft, analizzando i log con piena consapevolezza del sistema." />
+<FlowStep number="6" title="LLM → Agente (report generato)" description="Il modello restituisce all'agente il report elaborato: anomalie rilevate, trend, errori critici e raccomandazioni." />
+<FlowStep number="7" title="Agente → Email (invio report)" description="L'agente invia il report via email all'operatore designato, completando il ciclo in modo completamente automatico." />
+</div>
+</div>
+
+<div>
+<div style={{
+background: "linear-gradient(135deg, #3F51B5, #5C6BC0)",
+borderRadius: 10, padding: "14px 20px", marginBottom: 16, color: "#fff"
+}}>
+<strong style={{ fontSize: 16 }}>💬 Flusso 2 — Chat (Analisi on Demand via Slack)</strong>
+<p style={{ margin: "4px 0 0", fontSize: 13, opacity: 0.9 }}>
+Attivato da una domanda dell'operatore via Slack. Risposta fornita in tempo reale nella stessa chat.
+</p>
+</div>
+<div style={{ background: "#fff", borderRadius: 10, padding: 20, border: "1px solid #E8EAF6" }}>
+<FlowStep number="1" title="Operatore → Slack (domanda)" description="L'operatore pone una domanda in linguaggio naturale su Slack (es. 'Ci sono stati errori critici sull'API X nelle ultime 2 ore?')." />
+<FlowStep number="2" title="Slack → Server Chatbot" description="Il server chatbot riceve il messaggio e lo invia all'agente MuleSoft." />
+<FlowStep number="3" title="Agente → LLM (comprensione)" description="La domanda viene inoltrata all'LLM perché la comprenda semanticamente e determini cosa cercare." />
+<FlowStep number="4" title="LLM → Knowledge Base (contesto)" description="L'LLM consulta la Knowledge Base per capire il contesto dell'applicazione o del flusso menzionato nella domanda." />
+<FlowStep number="5" title="LLM → Agente (richiesta log)" description="Il modello dice all'agente quali log recuperare e per quale intervallo temporale." />
+<FlowStep number="6" title="Agente → MCP Elastic" description="L'agente chiama l'MCP Elastic con i parametri di ricerca definiti dall'LLM." />
+<FlowStep number="7" title="MCP → Query su Elastic" description="L'MCP esegue la query su Elastic e recupera i log rilevanti." />
+<FlowStep number="8" title="MCP → Agente (log)" description="I log vengono restituiti all'agente." />
+<FlowStep number="9" title="Agente → LLM (log per analisi)" description="I log vengono forniti all'LLM per elaborare la risposta." />
+<FlowStep number="10" title="LLM → Agente (risposta elaborata)" description="Il modello genera una risposta in linguaggio naturale basata sui log e sul contesto della Knowledge Base." />
+<FlowStep number="11" title="Agente → Server Chatbot" description="L'agente invia la risposta al server chatbot." />
+<FlowStep number="12" title="Server Chatbot → Slack (risposta)" description="La risposta viene mostrata all'operatore nella chat Slack, chiudendo il ciclo in pochi secondi." />
+</div>
+</div>
+</div>
+)}
+
+{/* === SOLUZIONI === */}
+{active === "soluzioni" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>⚖️ Soluzioni a Confronto</h2>
+<p style={{ color: "#555", marginBottom: 20 }}>
+Il principale punto di scelta architetturale riguarda <strong>dove deployare il server MCP Elastic</strong>: direttamente su MuleSoft, oppure su AWS/Azure come servizio custom.
+</p>
+
+<div style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 24 }}>
+<ProCon
+title="Soluzione 1 — MCP su MuleSoft"
+recommended={false}
+pros={[
+"Riusa il processo SDLC standard di MuleSoft",
+"Best practice di sicurezza e testabilità già integrate",
+"Nessun costo aggiuntivo su AWS/Azure (usa vCore MuleSoft)"
+]}
+cons={[
+"Sviluppo del MCP Server da fare ex-novo, limitato ai tool necessari"
+]}
+/>
+<ProCon
+title="Soluzione 2 — MCP Custom su AWS/Azure"
+recommended={true}
+pros={[
+"MCP già esistente sul mercato, nessuna implementazione da zero",
+"Ampia selezione di tool disponibili",
+"Risparmio di vCore su MuleSoft",
+"Velocità di connessione massima con Elastic (stesso ambiente cloud)",
+"Cloud agnostic: possibilità di migrazione futura"
+]}
+cons={[
+"Frammentazione della governance applicativa",
+"Costi aggiuntivi lato Hyperscaler (AWS/Azure)",
+"Soluzione 'black-box' che richiede più tempo per reverse engineering e testing",
+"Valutazione della licenza correlata"
+]}
+/>
+</div>
+
+<div style={{ background: "#E8F5E9", border: "1px solid #A5D6A7", borderRadius: 10, padding: 16 }}>
+<p style={{ margin: 0, fontWeight: 700, color: "#1B5E20", marginBottom: 6 }}>✅ Raccomandazione Lene</p>
+<p style={{ margin: 0, color: "#2E7D32", fontSize: 14 }}>
+La <strong>Soluzione 2 (MCP Custom su AWS)</strong> è quella consigliata grazie alla massima velocità di connessione con Elastic, alla disponibilità di tool già pronti e alla flessibilità cloud agnostic. I costi aggiuntivi su Hyperscaler sono compensati dal risparmio di vCore su MuleSoft.
+</p>
+</div>
+</div>
+)}
+
+{/* === ROADMAP === */}
+{active === "roadmap" && (
+<div>
+<h2 style={{ color: "#1A1F3C", marginTop: 0 }}>🗺️ Roadmap per la POC & Next Steps</h2>
+
+<p style={{ color: "#555", marginBottom: 20 }}>
+Per procedere con la Proof of Concept, le attività sono suddivise in due aree: quelle a carico del <strong>cliente</strong> (frecce sinistra) e quelle a carico di <strong>Lene</strong> (frecce destra).
+</p>
+
+<div style={{ background: "#fff", borderRadius: 12, border: "1px solid #E8EAF6", overflow: "hidden", marginBottom: 24 }}>
+<div style={{ background: "#E87722", padding: "12px 20px" }}>
+<strong style={{ color: "#fff" }}>Lista Attività per la POC</strong>
+</div>
+{[
+"Provisioning ambienti",
+"Provisioning utenza admin AWS",
+"Set up Elastic su AWS",
+"Definizione struttura log su Elastic",
+"Set up Knowledge Base su AWS",
+"Modifica applicazione attualmente usata per il logging",
+"Set up LLM su AWS",
+"Sviluppo server MCPs",
+"Sviluppo agente su MuleSoft",
+"Sviluppo server chatbot e set up Slack",
+].map((a, i) => (
+<div key={i} style={{
+padding: "12px 20px",
+borderBottom: "1px solid #F5F6FA",
+background: i % 2 === 0 ? "#fff" : "#FAFAFA",
+display: "flex", alignItems: "center", gap: 12
+}}>
+<div style={{
+width: 24, height: 24, borderRadius: "50%",
+background: "#E8EAF6", color: "#3F51B5",
+display: "flex", alignItems: "center", justifyContent: "center",
+fontSize: 12, fontWeight: 700, flexShrink: 0
+}}>{i + 1}</div>
+<span style={{ fontSize: 14, color: "#333" }}>{a}</span>
+</div>
+))}
+</div>
+
+<div style={{ background: "#FFF8E1", border: "1px solid #FFD54F", borderRadius: 10, padding: 14, marginBottom: 24 }}>
+<p style={{ margin: 0, fontWeight: 700, color: "#E65100", marginBottom: 4 }}>📌 Nota importante</p>
+<p style={{ margin: 0, fontSize: 14, color: "#555" }}>
+La Knowledge Base andrà resa comprensibile dall'LLM, valutando la struttura e i formati dei dati contenuti (documentazione Confluence, User Stories, schemi di integrazione).
+</p>
+</div>
+
+<h3 style={{ color: "#1A1F3C" }}>🚀 Possibili Evolutive Post-POC</h3>
+{[
+{ icon: "📧", title: "AWS SES per invio email", desc: "Valutare l'utilizzo di Amazon Simple Email Service (SES) per gestire l'invio dei report di monitoraggio, sfruttando l'infrastruttura AWS già in uso." },
+{ icon: "🔗", title: "Webhook da Confluence", desc: "Enhancement per recuperare automaticamente le modifiche ai documenti Confluence tramite webhook, allineando la Knowledge Base in tempo reale senza intervento manuale." },
+{ icon: "📖", title: "User Stories nella Knowledge Base", desc: "Aggiungere alla Knowledge Base anche le User Stories dei flussi MuleSoft, fornendo all'agente contesto anche sui possibili use case applicativi, migliorando la qualità delle analisi." },
+].map((e, i) => (
+<div key={i} style={{
+background: "#fff", border: "1px solid #E8EAF6",
+borderLeft: "4px solid #7B1FA2",
+borderRadius: 10, padding: "16px 20px", marginBottom: 14
+}}>
+<div style={{ display: "flex", gap: 10, alignItems: "center", marginBottom: 6 }}>
+<span style={{ fontSize: 20 }}>{e.icon}</span>
+<strong style={{ color: "#1A1F3C" }}>{e.title}</strong>
+</div>
+<p style={{ margin: 0, color: "#555", fontSize: 14, lineHeight: 1.6 }}>{e.desc}</p>
+</div>
+))}
+</div>
+)}
+</div>
+</div>
+);
+}

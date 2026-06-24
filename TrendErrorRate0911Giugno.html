@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Rate Trend - Deloitte</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet">
+    <style>
+        :root {
+            --deloitte-green: #86BC25;
+            --deloitte-dark-green: #046A38;
+            --deloitte-black: #000000;
+            --deloitte-gray: #53565A;
+            --deloitte-light-gray: #A0A0A0;
+            --deloitte-bg-gray: #F5F5F5;
+            --deloitte-white: #FFFFFF;
+            --deloitte-red: #D0021B;
+            --deloitte-orange: #FF6B35;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            background: #fafafa;
+            color: #2c2c2c;
+            overflow-x: hidden;
+        }
+
+        .slide-header-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 50px;
+            background: #000000;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            padding: 0 40px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .deloitte-logo img {
+            height: 22px;
+        }
+
+        .dashboard-container {
+            padding: 70px 40px 40px 40px;
+            max-width: 1900px;
+            margin: 0 auto;
+            min-width: 0;
+        }
+
+        .dashboard-header {
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .warning-box {
+            display: none;
+        }
+
+        .warning-box strong {
+            display: none;
+        }
+
+        .dashboard-title {
+            font-size: 38px;
+            font-weight: 300;
+            color: var(--deloitte-black);
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+            word-break: break-word;
+        }
+
+        .dashboard-subtitle {
+            font-size: 20px;
+            color: var(--deloitte-green);
+            font-weight: 300;
+            margin-bottom: 15px;
+        }
+
+        .dashboard-period {
+            font-size: 16px;
+            color: var(--deloitte-gray);
+            font-weight: 400;
+        }
+
+        .rankings-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin-bottom: 35px;
+        }
+
+        .ranking-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.06);
+            min-width: 0;
+        }
+
+        .ranking-card.improvements {
+            border-top: 4px solid var(--deloitte-green);
+        }
+
+        .ranking-card.degradations {
+            border-top: 4px solid var(--deloitte-red);
+        }
+
+        .ranking-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--deloitte-bg-gray);
+        }
+
+        .ranking-icon {
+            font-size: 32px;
+            flex-shrink: 0;
+        }
+
+        .ranking-card.improvements .ranking-icon {
+            color: var(--deloitte-green);
+        }
+
+        .ranking-card.degradations .ranking-icon {
+            color: var(--deloitte-red);
+        }
+
+        .ranking-title {
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--deloitte-black);
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--deloitte-bg-gray);
+        }
+
+        .ranking-item:last-child {
+            border-bottom: none;
+        }
+
+        .ranking-position {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--deloitte-light-gray);
+            width: 30px;
+            flex-shrink: 0;
+        }
+
+        .ranking-endpoint {
+            flex: 1;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--deloitte-black);
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            margin: 0 15px;
+            display: flex;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .ranking-endpoint-name {
+            flex-shrink: 0;
+        }
+
+        .ranking-endpoint-current {
+            font-size: 11px;
+            font-weight: 400;
+            color: var(--deloitte-light-gray);
+            font-family: 'Inter', sans-serif;
+            white-space: nowrap;
+        }
+
+        .ranking-change {
+            font-size: 16px;
+            font-weight: 700;
+            padding: 6px 12px;
+            border-radius: 4px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2px;
+        }
+
+        .ranking-change-absolute {
+            font-size: 11px;
+            font-weight: 500;
+            opacity: 0.8;
+        }
+
+        .ranking-change.positive {
+            color: var(--deloitte-green);
+            background: rgba(134, 188, 37, 0.12);
+        }
+
+        .ranking-change.negative {
+            color: var(--deloitte-red);
+            background: rgba(208, 2, 27, 0.12);
+        }
+
+        .endpoints-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .endpoint-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            min-width: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .endpoint-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+        }
+
+        .endpoint-card.improving::before {
+            background: var(--deloitte-green);
+        }
+
+        .endpoint-card.degrading::before {
+            background: var(--deloitte-red);
+        }
+
+        .endpoint-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .endpoint-header {
+            margin-bottom: 15px;
+        }
+
+        .endpoint-name {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--deloitte-black);
+            font-family: 'Courier New', monospace;
+            margin-bottom: 8px;
+            word-break: break-all;
+        }
+
+        .endpoint-stats {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .endpoint-trend {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .endpoint-trend.positive {
+            color: var(--deloitte-green);
+        }
+
+        .endpoint-trend.negative {
+            color: var(--deloitte-red);
+        }
+
+        .endpoint-range {
+            font-size: 11px;
+            color: var(--deloitte-gray);
+        }
+
+        .endpoint-chart {
+            width: 100%;
+            height: 120px;
+            cursor: crosshair;
+        }
+
+        .tooltip {
+            position: absolute;
+            background: rgba(0, 0, 0, 0.92);
+            color: white;
+            padding: 12px 16px;
+            border-radius: 6px;
+            font-size: 12px;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.2s ease;
+            z-index: 1000;
+            max-width: 250px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(134, 188, 37, 0.3);
+        }
+
+        .tooltip.visible {
+            opacity: 1;
+        }
+
+        .tooltip-period {
+            font-size: 10px;
+            color: rgba(255, 255, 255, 0.6);
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .tooltip-value {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            color: var(--deloitte-green);
+        }
+
+        .tooltip-delta {
+            font-size: 11px;
+            font-weight: 500;
+        }
+
+        .summary-card {
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            color: white;
+            min-width: 0;
+        }
+
+        .summary-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--deloitte-green);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .summary-stat {
+            text-align: center;
+        }
+
+        .summary-stat-value {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        .summary-stat-value.green {
+            color: var(--deloitte-green);
+        }
+
+        .summary-stat-value.red {
+            color: var(--deloitte-red);
+        }
+
+        .summary-stat-label {
+            font-size: 11px;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary-chart {
+            width: 100%;
+            height: 140px;
+            margin-top: 15px;
+        }
+
+        @media (max-width: 1400px) {
+            .endpoints-grid {
+                grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+            }
+        }
+
+        @media (max-width: 900px) {
+            .rankings-section {
+                grid-template-columns: 1fr;
+            }
+
+            .endpoints-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .dashboard-container {
+                padding: 70px 20px 20px 20px;
+            }
+
+            .dashboard-title {
+                font-size: 28px;
+            }
+
+            .dashboard-subtitle {
+                font-size: 16px;
+            }
+
+            .summary-stats {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slide-header-bar">
+        <div class="deloitte-logo">
+            <img src="https://www.deloitte.com/content/dam/assets-shared/logos/svg/a-d/deloitte.svg" alt="Deloitte">
+        </div>
+    </div>
+
+    <div class="dashboard-container">
+        <div class="dashboard-header">
+            <h1 class="dashboard-title">Trend Individuali Error Rate per Entity</h1>
+            <p class="dashboard-subtitle">Analisi Dettagliata per Singolo Endpoint - Ranking per Impatto Assoluto</p>
+            <p class="dashboard-period">Periodo di Monitoraggio: 13 Marzo - 11 Giugno 2026 • 25 Entity Analizzate • 26 Periodi</p>
+            <div class="warning-box">
+                ⚠️ <strong>Error rate aumentato causa disservizio backend egon</strong>
+            </div>
+        </div>
+
+        <div class="rankings-section">
+            <div class="ranking-card improvements">
+                <div class="ranking-header">
+                    <span class="material-icons-outlined ranking-icon">trending_down</span>
+                    <h3 class="ranking-title">Top 5 Miglioramenti (Impatto Assoluto)</h3>
+                </div>
+                <div id="improvementsRanking"></div>
+            </div>
+
+            <div class="ranking-card degradations">
+                <div class="ranking-header">
+                    <span class="material-icons-outlined ranking-icon">trending_up</span>
+                    <h3 class="ranking-title">Top 5 Peggioramenti (Impatto Assoluto)</h3>
+                </div>
+                <div id="degradationsRanking"></div>
+            </div>
+        </div>
+
+        <div class="endpoints-grid" id="endpointsGrid"></div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script>
+        const periods = ['P1', 'P2', 'P3', 'P4', 'P5', 'P6', 'P7', 'P8', 'P9', 'P10', 'P11', 'P12', 'P13', 'P14', 'P15', 'P16', 'P17', 'P18', 'P19', 'P20', 'P21', 'P22', 'P23', 'P24', 'P25', 'P26'];
+        const periodLabels = ['13-16/03', '17-19/03', '20-23/03', '24-26/03', '27-30/03', '31/03-02/04', '03-06/04', '07-09/04', '10-13/04', '14-16/04', '17-20/04', '21-23/04', '24-27/04', '28-29/04', '30/04-04/05', '05-07/05', '08-11/05', '12-15/05', '15-18/05', '19-21/05', '22-25/05', '26-28/05', '29/05-02/06', '03-04/06', '05-08/06', '09-11/06'];
+
+        const entities = [
+            { name: 's-aws', data: [28.00, 24.39, 25.82, 25.12, 28.68, 30.39, 29.07, 29.40, 24.83, 24.13, 21.55, 21.38, 23.61, 28.93, 32.46, 26.64, 30.51, 27.80, 25.20, 24.16, 25.34, 24.72, 28.89, 26.05, 29.45, 22.46] },
+            { name: 'x-deepagent', data: [14.10, 3.92, 2.95, 4.64, 7.33, 3.09, 4.59, 4.03, 5.82, 6.18, 9.02, 7.62, 7.06, 7.60, 11.91, 12.05, 15.95, 19.07, 35.01, 0.32, 0.75, 0.00, 1.33, 0.67, 1.78, 1.27] },
+            { name: 'x-app', data: [11.18, 10.96, 11.30, 11.17, 12.48, 15.59, 18.81, 16.99, 13.03, 10.95, 12.34, 11.17, 12.18, 9.53, 14.32, 11.92, 11.03, 6.89, 7.36, 8.72, 9.49, 8.89, 11.64, 12.65, 4.33, 1.93] },
+            { name: 'p-masterdata', data: [0.05, 0.09, 0.07, 0.05, 0.04, 0.04, 0.07, 0.07, 0.05, 0.06, 0.08, 0.09, 0.05, 0.07, 0.04, 0.10, 0.08, 5.56, 9.00, 11.74, 12.38, 11.32, 18.18, 14.13, 3.70, 1.90] },
+            { name: 's-sap', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00, 0.00, 0.01, 0.00, 0.00, 0.00, 4.89, 8.15, 11.11, 11.57, 10.24, 14.05, 7.66, 2.93, 1.48] },
+            { name: 'x-sf', data: [0.00, 0.78, 0.00, 0.00, 0.00, 1.24, 1.13, 1.11, 1.43, 1.24, 1.40, 1.10, 1.57, 3.62, 0.00, 1.42, 1.73, 2.12, 2.35, 2.85, 2.00, 2.00, 0.00, 2.64, 30.40, 3.38] },
+            { name: 's-egon', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 9.40, 0.00] },
+            { name: 'x-comparator', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 2.68, 4.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.97, 1.05, 1.70, 1.23, 1.18, 1.24, 1.36, 1.93, 1.44] },
+            { name: 's-market-supplier', data: [0.00, 0.69, 0.39, 0.00, 0.00, 0.28, 9.06, 3.96, 1.03, 1.38, 1.30, 1.41, 2.25, 0.88, 7.90, 1.74, 1.71, 1.59, 1.82, 1.33, 1.32, 1.12, 0.43, 1.51, 0.57, 4.13] },
+            { name: 'p-market-comunication', data: [0.00, 0.69, 0.39, 0.00, 0.00, 0.28, 9.06, 3.96, 1.05, 1.41, 1.30, 1.41, 2.25, 0.88, 7.90, 1.74, 1.71, 0.00, 0.00, 1.33, 1.32, 1.12, 0.46, 1.51, 0.57, 4.13] },
+            { name: 'x-market-comunication', data: [0.59, 0.64, 0.17, 0.21, 0.00, 0.19, 5.08, 2.80, 0.63, 1.24, 1.19, 1.32, 2.03, 0.70, 4.64, 0.91, 0.97, 1.50, 1.74, 1.13, 1.23, 1.07, 0.45, 0.23, 0.30, 2.35] },
+            { name: 's-doxee', data: [0.00, 0.46, 0.00, 0.00, 0.00, 1.08, 1.93, 3.62, 0.30, 0.72, 1.08, 1.22, 0.95, 0.55, 0.32, 0.92, 0.93, 0.78, 0.21, 0.33, 0.60, 0.86, 0.56, 0.61, 0.21, 0.78] },
+            { name: 'x-web', data: [0.41, 0.47, 0.38, 0.62, 0.70, 1.13, 0.53, 0.96, 0.28, 0.68, 0.98, 1.09, 0.83, 0.52, 0.37, 0.92, 0.62, 0.36, 0.19, 0.34, 0.63, 0.86, 0.57, 0.58, 0.27, 0.46] },
+            { name: 's-sf', data: [0.00, 0.26, 0.41, 0.00, 0.00, 0.41, 0.19, 0.22, 0.27, 0.39, 0.42, 0.26, 0.21, 0.14, 0.21, 0.21, 0.26, 0.15, 0.18, 0.15, 0.14, 0.11, 0.12, 0.17, 0.19, 0.18] },
+            { name: 's-azure', data: [0.01, 0.06, 0.19, 0.79, 0.88, 0.10, 0.17, 0.15, 0.28, 0.25, 0.50, 0.23, 2.17, 0.26, 0.22, 0.25, 0.42, 0.26, 0.29, 0.33, 0.40, 1.17, 0.00, 0.58, 0.33, 0.32] },
+            { name: 'x-sap', data: [0.00, 0.01, 0.04, 0.01, 0.00, 0.02, 0.27, 0.10, 0.08, 0.12, 0.29, 0.12, 0.20, 0.18, 0.07, 0.29, 0.26, 0.39, 0.39, 0.35, 0.43, 0.19, 0.20, 0.26, 0.10, 0.28] },
+            { name: 'p-customer', data: [0.00, 0.69, 0.73, 0.50, 0.47, 0.64, 0.34, 0.45, 0.44, 0.64, 0.39, 0.43, 0.30, 0.27, 0.32, 0.37, 0.40, 0.29, 0.30, 0.32, 0.27, 0.21, 0.18, 0.22, 0.24, 0.25] },
+            { name: 'p-payment', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.35, 0.60, 0.22, 0.04, 0.23, 0.23, 0.45, 0.61, 0.08, 3.08, 0.32, 0.70, 0.29, 0.28, 0.17, 0.50, 0.68, 0.39] },
+            { name: 'p-event', data: [0.00, 0.00, 0.00, 0.01, 0.00, 0.75, 0.00, 0.55, 0.00, 0.24, 0.82, 0.00, 0.00, 0.00, 0.68, 0.35, 0.34, 0.00, 0.00, 0.00, 0.11, 0.08, 0.14, 0.13, 0.00, 0.10] },
+            { name: 'x-nexi', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] },
+            { name: 'x-aws', data: [0.00, 0.00, 0.00, 0.00, 0.00, 5.21, 0.00, 6.49, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 3.40, 0.00, 3.54, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] },
+            { name: 's-crif', data: [0.22, 0.00, 0.00, 0.00, 0.00, 0.00, 0.29, 1.15, 0.41, 1.65, 1.16, 1.89, 0.00, 0.00, 0.00, 0.46, 0.50, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] },
+            { name: 's-nexi', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.11, 0.12, 0.00, 0.00, 0.00, 0.02, 0.00, 0.00, 0.00, 0.59, 0.06, 0.00, 0.00, 0.00] },
+            { name: 's-mkc', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.48, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] },
+            { name: 's-comparetech', data: [0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00, 0.00] }
+        ];
+
+        // Calcola i trend per ogni entity
+        entities.forEach(entity => {
+            const firstValue = entity.data[0];
+            const lastValue = entity.data[entity.data.length - 1];
+            const previousValue = entity.data[entity.data.length - 2];
+            entity.trend = ((lastValue - firstValue) / (firstValue || 1)) * 100;
+            entity.lastChange = lastValue - previousValue;
+            entity.lastChangePercent = ((lastValue - previousValue) / (previousValue || 1)) * 100;
+            entity.currentValue = lastValue;
+            entity.min = Math.min(...entity.data);
+            entity.max = Math.max(...entity.data);
+        });
+
+        // Calcola i ranking per miglioramenti e peggioramenti
+        const improvements = entities
+            .filter(e => e.lastChange < 0)
+            .sort((a, b) => Math.abs(b.lastChange) - Math.abs(a.lastChange))
+            .slice(0, 5);
+
+        const degradations = entities
+            .filter(e => e.lastChange > 0)
+            .sort((a, b) => Math.abs(b.lastChange) - Math.abs(a.lastChange))
+            .slice(0, 5);
+
+        // Rendering dei ranking
+        function renderRanking(container, items, type) {
+            const html = items.map((item, index) => {
+                const changeClass = type === 'improvements' ? 'positive' : 'negative';
+                const changeSign = type === 'improvements' ? '' : '+';
+                return `
+                    <div class="ranking-item">
+                        <div class="ranking-position">${index + 1}</div>
+                        <div class="ranking-endpoint">
+                            <span class="ranking-endpoint-name">${item.name}</span>
+                            <span class="ranking-endpoint-current">(${item.currentValue.toFixed(2)}%)</span>
+                        </div>
+                        <div class="ranking-change ${changeClass}">
+                            <span>${changeSign}${item.lastChangePercent.toFixed(1)}%</span>
+                            <span class="ranking-change-absolute">${changeSign}${item.lastChangePercent.toFixed(1)}%</span>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+            document.getElementById(container).innerHTML = html;
+        }
+
+        renderRanking('improvementsRanking', improvements, 'improvements');
+        renderRanking('degradationsRanking', degradations, 'degradations');
+
+        const tooltip = document.getElementById('tooltip');
+
+        function createEntityCards() {
+            const grid = document.getElementById('endpointsGrid');
+            const summaryCard = createSummaryCard();
+            grid.appendChild(summaryCard);
+            entities.forEach((entity, index) => {
+                const card = createEntityCard(entity, index);
+                grid.appendChild(card);
+            });
+        }
+
+        function createSummaryCard() {
+            const improving = entities.filter(e => e.lastChange < 0).length;
+            const degrading = entities.filter(e => e.lastChange > 0).length;
+            const card = document.createElement('div');
+            card.className = 'summary-card';
+            card.innerHTML = `
+                <h3 class="summary-title">Riepilogo Generale</h3>
+                <div class="summary-stats">
+                    <div class="summary-stat">
+                        <div class="summary-stat-value green">${improving}</div>
+                        <div class="summary-stat-label">In Miglioramento</div>
+                    </div>
+                    <div class="summary-stat">
+                        <div class="summary-stat-value red">${degrading}</div>
+                        <div class="summary-stat-label">In Peggioramento</div>
+                    </div>
+                    <div class="summary-stat">
+                        <div class="summary-stat-value">${entities.length}</div>
+                        <div class="summary-stat-label">Totale Entity</div>
+                    </div>
+                </div>
+                <canvas class="summary-chart" id="summaryChart"></canvas>
+            `;
+            setTimeout(() => drawSummaryChart(), 100);
+            return card;
+        }
+
+        function createEntityCard(entity, index) {
+            const isImproving = entity.lastChange < 0;
+            const minValue = Math.min(...entity.data);
+            const maxValue = Math.max(...entity.data);
+            const rangeText = `${minValue.toFixed(2)}% - ${maxValue.toFixed(2)}%`;
+            const card = document.createElement('div');
+            card.className = `endpoint-card ${isImproving ? 'improving' : 'degrading'}`;
+            card.innerHTML = `
+                <div class="endpoint-header">
+                    <div class="endpoint-name">${entity.name}</div>
+                    <div class="endpoint-stats">
+                        <div class="endpoint-trend ${isImproving ? 'positive' : 'negative'}">
+                            ${isImproving ? '↓' : '↑'} ${Math.abs(entity.lastChangePercent).toFixed(1)}%
+                        </div>
+                        <div class="endpoint-range">${rangeText}</div>
+                    </div>
+                </div>
+                <canvas class="endpoint-chart" id="chart-${index}"></canvas>
+            `;
+            setTimeout(() => drawEntityChart(entity, index), 100);
+            return card;
+        }
+
+        function drawSummaryChart() {
+            const canvas = document.getElementById('summaryChart');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = canvas.offsetWidth;
+            canvas.height = 140;
+            const padding = { top: 20, right: 20, bottom: 30, left: 20 };
+            const width = canvas.width - padding.left - padding.right;
+            const height = canvas.height - padding.top - padding.bottom;
+            const avgData = periods.map((_, periodIndex) => {
+                const sum = entities.reduce((acc, entity) => acc + entity.data[periodIndex], 0);
+                return sum / entities.length;
+            });
+            const maxValue = Math.max(...avgData);
+            const minValue = Math.min(...avgData);
+            const valueRange = maxValue - minValue;
+            const yScale = height / (valueRange * 1.2);
+            const xScale = width / (periods.length - 1);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            const gradient = ctx.createLinearGradient(0, 0, width, 0);
+            gradient.addColorStop(0, '#86BC25');
+            gradient.addColorStop(1, '#046A38');
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 2.5;
+            ctx.beginPath();
+            avgData.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            avgData.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath();
+                ctx.arc(x, y, 4, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = '#86BC25';
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.7)';
+            ctx.font = '10px Inter';
+            ctx.textAlign = 'center';
+            periods.forEach((period, i) => {
+                const x = padding.left + xScale * i;
+                ctx.fillText(period, x, canvas.height - 8);
+            });
+        }
+
+        function drawEntityChart(entity, index) {
+            const canvas = document.getElementById(`chart-${index}`);
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            canvas.width = canvas.offsetWidth;
+            canvas.height = 120;
+            const padding = { top: 15, right: 15, bottom: 25, left: 15 };
+            const width = canvas.width - padding.left - padding.right;
+            const height = canvas.height - padding.top - padding.bottom;
+            const maxValue = Math.max(...entity.data);
+            const minValue = Math.min(...entity.data);
+            const valueRange = maxValue - minValue;
+            const yScale = height / (Math.max(valueRange * 1.2, 1));
+            const xScale = width / (periods.length - 1);
+            const isImproving = entity.lastChange < 0;
+            const lineColor = isImproving ? '#86BC25' : '#D0021B';
+            const areaColor = isImproving ? 'rgba(134, 188, 37, 0.15)' : 'rgba(208, 2, 27, 0.15)';
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = areaColor;
+            ctx.beginPath();
+            ctx.moveTo(padding.left, padding.top + height);
+            entity.data.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                ctx.lineTo(x, y);
+            });
+            ctx.lineTo(padding.left + width, padding.top + height);
+            ctx.closePath();
+            ctx.fill();
+            ctx.strokeStyle = lineColor;
+            ctx.lineWidth = 2.5;
+            ctx.lineCap = 'round';
+            ctx.lineJoin = 'round';
+            ctx.beginPath();
+            entity.data.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                if (i === 0) ctx.moveTo(x, y);
+                else ctx.lineTo(x, y);
+            });
+            ctx.stroke();
+            entity.data.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                ctx.fillStyle = '#ffffff';
+                ctx.beginPath();
+                ctx.arc(x, y, 3.5, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.strokeStyle = lineColor;
+                ctx.lineWidth = 2;
+                ctx.stroke();
+            });
+            ctx.fillStyle = '#A0A0A0';
+            ctx.font = '9px Inter';
+            ctx.textAlign = 'center';
+            periods.forEach((period, i) => {
+                const x = padding.left + xScale * i;
+                ctx.fillText(period, x, canvas.height - 8);
+            });
+            canvas.addEventListener('mousemove', (e) => handleChartHover(e, canvas, entity, index, padding, xScale, yScale, minValue));
+            canvas.addEventListener('mouseleave', () => handleChartLeave());
+        }
+
+        function handleChartHover(e, canvas, entity, index, padding, xScale, yScale, minValue) {
+            const rect = canvas.getBoundingClientRect();
+            const mouseX = e.clientX - rect.left;
+            const mouseY = e.clientY - rect.top;
+            const height = canvas.height - padding.top - padding.bottom;
+            let closestPoint = null;
+            let minDistance = Infinity;
+            entity.data.forEach((value, i) => {
+                const x = padding.left + xScale * i;
+                const y = padding.top + height - ((value - minValue) * yScale);
+                const distance = Math.sqrt(Math.pow(mouseX - x, 2) + Math.pow(mouseY - y, 2));
+                if (distance < 15 && distance < minDistance) {
+                    minDistance = distance;
+                    closestPoint = i;
+                }
+            });
+            if (closestPoint !== null) {
+                showTooltip(e.clientX, e.clientY, entity, closestPoint);
+            } else {
+                hideTooltip();
+            }
+        }
+
+        function handleChartLeave() {
+            hideTooltip();
+        }
+
+        function showTooltip(x, y, entity, periodIndex) {
+            const value = entity.data[periodIndex];
+            const period = periodLabels[periodIndex];
+            let deltaHTML = '';
+            if (periodIndex > 0) {
+                const prevValue = entity.data[periodIndex - 1];
+                const change = ((value - prevValue) / (prevValue || 1)) * 100;
+                const deltaClass = change < 0 ? 'positive' : 'negative';
+                const deltaSymbol = change < 0 ? '↓' : '↑';
+                deltaHTML = `<div class="tooltip-delta ${deltaClass}">${deltaSymbol} ${Math.abs(change).toFixed(1)}% vs periodo precedente</div>`;
+            }
+            tooltip.innerHTML = `
+                <div class="tooltip-period">${period}</div>
+                <div class="tooltip-value">${value.toFixed(2)}%</div>
+                ${deltaHTML}
+            `;
+            tooltip.style.left = x + 15 + 'px';
+            tooltip.style.top = y - 15 + 'px';
+            tooltip.classList.add('visible');
+        }
+
+        function hideTooltip() {
+            tooltip.classList.remove('visible');
+        }
+
+        createEntityCards();
+    </script>
+</body>
+</html>
